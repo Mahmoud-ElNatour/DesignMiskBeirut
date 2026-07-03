@@ -128,20 +128,50 @@
     </style>
 </head>
 <body class="bg-marble-white text-on-surface font-body-md overflow-x-hidden">
-<!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline/10 shadow-sm transition-all duration-300 h-[80px] flex items-center">
-<div class="max-w-[1280px] mx-auto px-[20px] md:px-[80px] w-full flex justify-between items-center">
-<a class="font-headline-md text-headline-md text-primary italic uppercase tracking-tighter" href="#">MISK BEIRUT</a>
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline/10 shadow-sm transition-all duration-300">
+<div class="max-w-[1280px] mx-auto px-[20px] md:px-[80px] flex justify-between items-center py-4">
+<a class="font-headline-md text-headline-md text-primary italic uppercase tracking-tighter" href="../misk_beirut_home_refined_spacing/code.html#home">MISK BEIRUT</a>
 <div class="hidden md:flex items-center gap-[24px]">
-<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#home">Home</a>
-<a class="font-label-lg text-label-lg uppercase tracking-widest text-secondary border-b border-secondary pb-1" href="#about">About Us</a>
-<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#services">Services</a>
-<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#careers">Careers</a>
-<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#contact">Contact Us</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="../misk_beirut_home_refined_spacing/code.html#home">Home</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-secondary border-b border-secondary pb-1" href="code.html">About Us</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="../misk_beirut_home_refined_spacing/code.html#services">Services</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="../careers_misk_beirut/code.html">Careers</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="../contact_us_final_prototype_restored_fixed/code.html">Contact Us</a>
 </div>
+<div class="flex items-center gap-4">
 <button class="font-label-lg text-label-lg uppercase tracking-widest text-primary hover:opacity-80 transition-opacity">EN/AR</button>
+<button class="md:hidden flex items-center justify-center p-2 text-primary hover:opacity-80 transition-opacity" onclick="toggleMobileMenu()" aria-label="Toggle Menu">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</div>
 </div>
 </nav>
+
+<!-- Mobile Menu Drawer -->
+<div id="mobile-drawer" class="fixed inset-y-0 right-0 z-50 w-full max-w-[300px] bg-surface/95 backdrop-blur-md shadow-2xl border-l border-outline/10 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col p-6 md:hidden">
+<div class="flex justify-between items-center mb-10">
+<span class="font-headline-md text-headline-md text-primary italic uppercase tracking-tighter">MISK BEIRUT</span>
+<button class="text-primary hover:opacity-80 transition-opacity" onclick="toggleMobileMenu()" aria-label="Close Menu">
+<span class="material-symbols-outlined text-3xl">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-6">
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors py-2 border-b border-outline/5" href="../misk_beirut_home_refined_spacing/code.html#home">Home</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-secondary border-b border-secondary pb-1 self-start py-2" href="code.html">About Us</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors py-2 border-b border-outline/5" href="../misk_beirut_home_refined_spacing/code.html#services">Services</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors py-2 border-b border-outline/5" href="../careers_misk_beirut/code.html">Careers</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors py-2 border-b border-outline/5" href="../contact_us_final_prototype_restored_fixed/code.html">Contact Us</a>
+</div>
+<div class="mt-auto pt-6 flex flex-col gap-4">
+<button class="font-label-lg text-label-lg uppercase tracking-widest text-primary hover:opacity-80 transition-opacity py-2 border border-primary/20 w-full text-center">EN/AR</button>
+<div class="flex gap-4 justify-center text-sm opacity-60 mt-4">
+<a aria-label="Instagram" class="hover:text-brick-red transition-colors" href="#"><div class="w-6 h-6 flex items-center justify-center font-bold">IG</div></a>
+<a aria-label="Facebook" class="hover:text-brick-red transition-colors" href="#"><div class="w-6 h-6 flex items-center justify-center font-bold">FB</div></a>
+</div>
+</div>
+</div>
+<!-- Mobile Menu Backdrop -->
+<div id="mobile-backdrop" class="fixed inset-0 z-40 bg-black/20 backdrop-blur-sm hidden opacity-0 transition-opacity duration-300 md:hidden" onclick="toggleMobileMenu()"></div>
 <main class="pt-[80px]">
 <!-- Page Header (Hero) -->
 <section class="relative h-[60vh] py-[96px] flex items-center justify-center overflow-hidden transition-all duration-1000 ease-out opacity-100 translate-y-0">
@@ -254,48 +284,40 @@
 </section>
 </main>
 <!-- Footer -->
-<footer class="bg-marble-white dark:bg-surface-container-lowest border-t border-slate-blue/10">
-<div class="pt-[120px] pb-[48px]">
-<div class="max-w-[1280px] mx-auto px-[20px] md:px-[80px]">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-[24px]">
-<div class="md:col-span-1">
-<span class="font-headline-lg text-headline-lg text-brick-red block mb-[16px]">MISK BEIRUT</span>
-<p class="font-body-md text-body-md text-slate-blue/70">
-                        High-Luxury Mediterranean Hospitality since 1982.
-                    </p>
+<footer class="bg-marble-white border-t border-slate-blue/10">
+<div class="max-w-[1280px] mx-auto px-[20px] md:px-[80px] py-[120px] grid grid-cols-1 md:grid-cols-3 gap-[24px]">
+<div class="space-y-[16px]">
+<a class="font-headline-lg text-headline-lg text-brick-red italic uppercase" href="../misk_beirut_home_refined_spacing/code.html#home">MISK BEIRUT</a>
+<p class="font-body-md text-body-md text-slate-blue max-w-xs leading-relaxed">
+                    Authentic Mediterranean soul reimagined for the modern luxury experience. Since 1982.
+                </p>
 </div>
-<div>
-<h5 class="font-label-lg text-label-lg uppercase tracking-widest text-primary mb-[16px]">Quick Links</h5>
-<ul class="space-y-[8px]">
-<li><a class="font-body-md text-body-md text-tertiary hover:text-brick-red transition-all hover:translate-x-1 inline-block" href="#">Locations</a></li>
-<li><a class="font-body-md text-body-md text-tertiary hover:text-brick-red transition-all hover:translate-x-1 inline-block" href="#">Our Menu</a></li>
-<li><a class="font-body-md text-body-md text-tertiary hover:text-brick-red transition-all hover:translate-x-1 inline-block" href="#">Reservations</a></li>
-<li><a class="font-body-md text-body-md text-tertiary hover:text-brick-red transition-all hover:translate-x-1 inline-block" href="#">Press Kit</a></li>
+<div class="space-y-[16px]">
+<h4 class="font-label-lg text-label-lg uppercase text-primary font-bold">Explore</h4>
+<ul class="space-y-3">
+<li class=""><a class="text-tertiary hover:text-brick-red transition-colors inline-block" href="#">Our Menu</a></li>
+<li class=""><a class="text-tertiary hover:text-brick-red transition-colors inline-block" href="../misk_beirut_home_refined_spacing/code.html#services">Services</a></li>
+<li class=""><a class="text-tertiary hover:text-brick-red transition-colors inline-block" href="code.html">About Us</a></li>
+<li class=""><a class="text-tertiary hover:text-brick-red transition-colors inline-block" href="../careers_misk_beirut/code.html">Careers</a></li>
 </ul>
 </div>
-<div>
-<h5 class="font-label-lg text-label-lg uppercase tracking-widest text-primary mb-[16px]">Legal</h5>
-<ul class="space-y-[8px]">
-<li><a class="font-body-md text-body-md text-tertiary hover:text-brick-red transition-all hover:translate-x-1 inline-block" href="#">Privacy Policy</a></li>
-<li><a class="font-body-md text-body-md text-tertiary hover:text-brick-red transition-all hover:translate-x-1 inline-block" href="#">Terms of Service</a></li>
+<div class="space-y-[16px]">
+<h4 class="font-label-lg text-label-lg uppercase text-primary font-bold">Company</h4>
+<ul class="space-y-3">
+<li class=""><a class="text-tertiary hover:text-brick-red transition-colors inline-block" href="#">Privacy Policy</a></li>
+<li class=""><a class="text-tertiary hover:text-brick-red transition-colors inline-block" href="#">Terms of Service</a></li>
+<li class=""><a class="text-tertiary hover:text-brick-red transition-colors inline-block" href="#">Locations</a></li>
+<li class=""><a class="text-tertiary hover:text-brick-red transition-colors inline-block" href="#">Press Kit</a></li>
 </ul>
-</div>
-<div>
-<h5 class="font-label-lg text-label-lg uppercase tracking-widest text-primary mb-[16px]">Contact</h5>
-<ul class="space-y-[8px] font-body-md text-body-md text-tertiary">
-<li>Beirut, Lebanon</li>
-<li>+961 1 234 567</li>
-<li>hello@miskbeirut.com</li>
-</ul>
-</div>
-</div>
 </div>
 </div>
 <div class="border-t border-slate-blue/10">
-<div class="max-w-[1280px] mx-auto px-[20px] md:px-[80px] py-[32px]">
-<p class="font-body-md text-body-md text-tertiary text-center">
-                © 2024 Misk Beirut. High-Luxury Mediterranean Hospitality.
-            </p>
+<div class="max-w-[1280px] mx-auto px-[20px] md:px-[80px] py-[32px] flex flex-col md:flex-row justify-between items-center gap-4 text-sm opacity-60">
+<p class="">© 2024 Misk Beirut.</p>
+<div class="flex gap-4 items-center">
+<a aria-label="Instagram" class="hover:text-brick-red transition-colors" href="#"><div class="w-6 h-6 flex items-center justify-center"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></div></a>
+<a aria-label="Facebook" class="hover:text-brick-red transition-colors" href="#"><div class="w-6 h-6 flex items-center justify-center"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/></svg></div></a>
+</div>
 </div>
 </div>
 </footer>
@@ -321,5 +343,22 @@
         }
         observer.observe(section);
     });
+
+    // Mobile menu toggle logic
+    function toggleMobileMenu() {
+        const drawer = document.getElementById('mobile-drawer');
+        const backdrop = document.getElementById('mobile-backdrop');
+        if (drawer.classList.contains('translate-x-full')) {
+            drawer.classList.remove('translate-x-full');
+            backdrop.classList.remove('hidden');
+            setTimeout(() => backdrop.classList.add('opacity-100'), 10);
+            document.body.style.overflow = 'hidden';
+        } else {
+            drawer.classList.add('translate-x-full');
+            backdrop.classList.remove('opacity-100');
+            setTimeout(() => backdrop.classList.add('hidden'), 300);
+            document.body.style.overflow = '';
+        }
+    }
 </script>
 </body></html>
