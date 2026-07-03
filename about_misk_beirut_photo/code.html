@@ -1,0 +1,354 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>About Us | Misk Beirut</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#454748",
+                    "on-secondary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed-variant": "#7d2a2d",
+                    "inverse-primary": "#a6cbe5",
+                    "surface": "#f9f9fb",
+                    "inverse-on-surface": "#f1f0f2",
+                    "tertiary-fixed-dim": "#c6c6c7",
+                    "onyx-text": "#1A1A1A",
+                    "secondary-fixed": "#ffdad8",
+                    "brick-red": "#8F383A",
+                    "surface-container-low": "#f4f3f5",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed": "#e2e2e3",
+                    "background": "#f9f9fb",
+                    "on-background": "#1a1c1d",
+                    "slate-blue": "#4E7289",
+                    "secondary-fixed-dim": "#ffb3b1",
+                    "surface-container": "#eeeeef",
+                    "surface-variant": "#e2e2e4",
+                    "primary-fixed-dim": "#a6cbe5",
+                    "on-secondary-container": "#762528",
+                    "on-tertiary-container": "#f1f1f2",
+                    "surface-tint": "#3e6379",
+                    "surface-container-high": "#e8e8ea",
+                    "inverse-surface": "#2f3132",
+                    "primary-container": "#4e7289",
+                    "on-primary": "#ffffff",
+                    "secondary-container": "#fd8e8d",
+                    "on-primary-fixed-variant": "#254b60",
+                    "on-primary-container": "#e5f3ff",
+                    "on-secondary-fixed": "#410007",
+                    "on-primary-fixed": "#001e2d",
+                    "on-tertiary-fixed": "#1a1c1d",
+                    "primary-fixed": "#c6e7ff",
+                    "on-error-container": "#93000a",
+                    "tertiary": "#545657",
+                    "on-surface": "#1a1c1d",
+                    "marble-white": "#F5F5F6",
+                    "error-container": "#ffdad6",
+                    "primary": "#355970",
+                    "surface-dim": "#dadadc",
+                    "outline-variant": "#c2c7cd",
+                    "on-surface-variant": "#42474c",
+                    "surface-container-highest": "#e2e2e4",
+                    "on-error": "#ffffff",
+                    "secondary": "#9b4143",
+                    "tertiary-container": "#6c6e6f",
+                    "outline": "#72787d",
+                    "surface-bright": "#f9f9fb",
+                    "on-tertiary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "stack-lg": "48px",
+                    "stack-sm": "8px",
+                    "margin-mobile": "20px",
+                    "section-gap": "120px",
+                    "margin-desktop": "80px",
+                    "gutter": "24px",
+                    "stack-md": "16px"
+            },
+            "fontFamily": {
+                    "display-lg": ["EB Garamond"],
+                    "headline-md": ["EB Garamond"],
+                    "headline-lg": ["EB Garamond"],
+                    "label-sm": ["Hanken Grotesk"],
+                    "label-lg": ["Hanken Grotesk"],
+                    "headline-lg-mobile": ["EB Garamond"],
+                    "body-md": ["Hanken Grotesk"],
+                    "body-lg": ["Hanken Grotesk"]
+            },
+            "fontSize": {
+                    "display-lg": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "500" }],
+                    "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "400" }],
+                    "headline-lg": ["48px", { "lineHeight": "56px", "fontWeight": "500" }],
+                    "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                    "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                    "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "500" }],
+                    "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                    "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md border-b border-outline/10 shadow-sm transition-all duration-300">
+<div class="flex justify-between items-center px-margin-desktop py-4 max-w-[1280px] mx-auto">
+<span class="font-headline-md text-headline-md text-primary dark:text-primary-fixed-dim italic">MISK BEIRUT</span>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">Home</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-secondary dark:text-secondary-fixed-dim border-b border-secondary pb-1" href="#">About Us</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">Services</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">Contact Us</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">Careers</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">Franchise</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="font-label-lg text-label-lg uppercase tracking-widest text-primary dark:text-primary-fixed-dim hover:opacity-80 transition-opacity">EN/AR</button>
+<button class="md:hidden flex items-center">
+<span class="material-symbols-outlined text-primary">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="w-full bg-marble-white py-24 md:py-32 overflow-hidden relative">
+<div class="max-w-[1280px] mx-auto px-margin-desktop text-center relative z-10">
+<h1 class="font-display-lg text-display-lg text-primary mb-6 reveal-on-scroll">About Misk Beirut</h1>
+<div class="w-24 h-px bg-brick-red mx-auto reveal-on-scroll" style="transition-delay: 200ms"></div>
+<p class="mt-8 font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto reveal-on-scroll" style="transition-delay: 300ms">
+                    A timeless sanctuary of Levantine hospitality, where every dish tells a story of heritage and every visit feels like coming home.
+                </p>
+</div>
+<!-- Subtle Texture Overlay -->
+<div class="absolute inset-0 opacity-5 pointer-events-none" style="background-image: radial-gradient(circle at 2px 2px, #4E7289 1px, transparent 0); background-size: 40px 40px;"></div>
+</section>
+<!-- Founder Story Section -->
+<section class="py-section-gap px-margin-desktop max-w-[1280px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<!-- Left Column: Portrait -->
+<div class="md:col-span-5 reveal-on-scroll">
+<div class="relative group">
+<div class="absolute -inset-4 border border-slate-blue/10 pointer-events-none transition-transform duration-500 group-hover:scale-[1.02]"></div>
+<img alt="Elias Mansour" class="w-full h-auto object-cover grayscale hover:grayscale-0 transition-all duration-700 shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2y7a7-zElnk20Xu4CUOsjUdqyUXYehOnwqWx7ei1y4VcdtdXC6YwHbhMgG9BDcLzLxs1Zo1H80TxcmJtpS3GCE2xDe7QZQ-vwY-DCIDSEgGgxz75B2IXO0xx8PBTMDIwsrhbK6Aws7m2_Z0xJlOXPPgZP36FsINRKypve8QfUFVEgbeX6ephE1zZSJ6alXgkmuh9Kj2AfsGqHhIfBt8pUJN1SnJ6NE53EbR64Pruapj2FaCFMV5MDVe47Mit9dzNy-buhhS9_dz0">
+<div class="mt-6">
+<p class="font-headline-md text-headline-md text-primary italic">Elias Mansour</p>
+<p class="font-label-lg text-label-lg text-on-surface-variant uppercase tracking-widest mt-1">Founder &amp; Visionary</p>
+</div>
+</div>
+</div>
+<!-- Right Column: Story -->
+<div class="md:col-span-6 md:col-start-7 mt-12 md:mt-0 reveal-on-scroll" style="transition-delay: 200ms">
+<span class="font-label-lg text-label-lg text-brick-red uppercase tracking-widest mb-4 block">Since 1982</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-8">Our Story</h2>
+<div class="space-y-6">
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                            Misk Beirut began as a modest kitchen in the heart of pre-war Beirut, driven by Elias Mansour's unwavering belief that the soul of Lebanese culture resides in its flavors. What started as a small gathering place for poets and painters blossomed into a sanctuary for authentic Levantine gastronomy.
+                        </p>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                            Over four decades, we have remained anchored in our commitment to artisanal Levant techniques—sourcing the finest sumac from the mountains, olive oil from the groves of Koura, and hospitality from the depths of our heritage.
+                        </p>
+</div>
+<blockquote class="mt-12 pl-8 border-l-2 border-brick-red">
+<p class="font-headline-md text-headline-md text-primary italic leading-tight">
+                            "An honest approach to food, focusing on the integrity of ingredients and the warmth of Lebanese tradition."
+                        </p>
+</blockquote>
+</div>
+</div>
+</section>
+<!-- Values Section -->
+<section class="bg-marble-white py-section-gap">
+<div class="max-w-[1280px] mx-auto px-margin-desktop">
+<div class="text-center mb-16 reveal-on-scroll">
+<h2 class="font-headline-lg text-headline-lg text-primary">The Pillars of Misk</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Heritage Card -->
+<div class="bg-surface p-12 reveal-on-scroll hover:translate-y-[-8px] transition-transform duration-300 shadow-[0px_4px_20px_rgba(0,0,0,0.04)]" style="transition-delay: 100ms">
+<div class="w-12 h-12 flex items-center justify-center text-brick-red mb-8">
+<span class="material-symbols-outlined text-4xl">history_edu</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Heritage</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Preserving the generational secrets of Lebanese culinary arts while embracing contemporary refinement.
+                        </p>
+</div>
+<!-- Quality Card -->
+<div class="bg-surface p-12 reveal-on-scroll hover:translate-y-[-8px] transition-transform duration-300 shadow-[0px_4px_20px_rgba(0,0,0,0.04)]" style="transition-delay: 200ms">
+<div class="w-12 h-12 flex items-center justify-center text-brick-red mb-8">
+<span class="material-symbols-outlined text-4xl">verified</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Quality</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Sourcing without compromise. Every ingredient is selected for its purity, origin, and seasonal peak.
+                        </p>
+</div>
+<!-- Community Card -->
+<div class="bg-surface p-12 reveal-on-scroll hover:translate-y-[-8px] transition-transform duration-300 shadow-[0px_4px_20px_rgba(0,0,0,0.04)]" style="transition-delay: 300ms">
+<div class="w-12 h-12 flex items-center justify-center text-brick-red mb-8">
+<span class="material-symbols-outlined text-4xl">diversity_3</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Community</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Creating a table where every guest is family. Our hospitality extends far beyond the dining room.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Journey Timeline -->
+<section class="py-section-gap px-margin-desktop max-w-[1280px] mx-auto">
+<div class="text-center mb-24 reveal-on-scroll">
+<h2 class="font-headline-lg text-headline-lg text-primary">Our Journey Through Time</h2>
+</div>
+<div class="relative">
+<!-- Vertical Line -->
+<div class="absolute left-1/2 -translate-x-1/2 h-full w-px bg-outline/10 hidden md:block"></div>
+<!-- Timeline Items -->
+<div class="space-y-24">
+<!-- 1982 -->
+<div class="relative grid grid-cols-1 md:grid-cols-2 gap-gutter md:gap-32 items-center reveal-on-scroll">
+<div class="md:text-right">
+<span class="font-display-lg text-display-lg text-brick-red/20 block mb-2 leading-none">1982</span>
+<h4 class="font-headline-md text-headline-md text-primary mb-4">The Founding</h4>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md md:ml-auto">
+                                Elias Mansour opens the first Misk oven in Beirut, focused on artisanal manousheh and traditional mezze.
+                            </p>
+</div>
+<div class="hidden md:block relative">
+<div class="w-4 h-4 rounded-full bg-brick-red absolute left-[-16px] top-1/2 -translate-x-1/2 -translate-y-1/2 ring-8 ring-surface"></div>
+<div class="aspect-video bg-cover bg-center rounded-lg shadow-sm" data-alt="A nostalgic, vintage-style black and white photograph of a small, charming bakery storefront in 1980s Beirut with sun-drenched stone walls and people gathered outside. The lighting is warm and grainy, evoking a sense of history and beginnings." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCCdF6LEY22Ddw6q2vZg0lDg2V4zik2-XFh2jDO-e1O-59q-2YCEhy-v8f8vZ1Omofg_ZWGnjsLwa123CsEsk1Ph9l7-H0Mcl_hycSRn5Ty4ARuTMylkzV0L6W-D-z45T_SnERDINs18P6dBEt6pbBx7FX9meHBeYkAqJn1VuIcztrk4gA7nMYSFdAbmVTNq4czenSkN4cWsQJg7rvOjqvfpCcIroep_CpG7CZP8LMwSVqde0JR0F3Zknifm74-YFnl8N3_aZcq6_c')"></div>
+</div>
+</div>
+<!-- 2004 -->
+<div class="relative grid grid-cols-1 md:grid-cols-2 gap-gutter md:gap-32 items-center reveal-on-scroll">
+<div class="md:order-2">
+<span class="font-display-lg text-display-lg text-brick-red/20 block mb-2 leading-none">2004</span>
+<h4 class="font-headline-md text-headline-md text-primary mb-4">Expansion</h4>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+                                Relocation to a historic manor in the Central District, transforming into a full-scale culinary destination.
+                            </p>
+</div>
+<div class="hidden md:block relative md:order-1">
+<div class="w-4 h-4 rounded-full bg-brick-red absolute right-[-16px] top-1/2 translate-x-1/2 -translate-y-1/2 ring-8 ring-surface"></div>
+<div class="aspect-video bg-cover bg-center rounded-lg shadow-sm" data-alt="An elegant architectural photograph of a restored historical manor in Beirut's Central District. The building features large arched windows, limestone walls, and a grand entrance with jasmine vines climbing the facade. The late afternoon sun casts long, soft shadows across the cobblestones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDdGG6jGIU1UZ_A7e7h6wLUr1fsaH56V9cITtL_b0KOxiD1ajBB-IJgi92YIh1kkia1mpNNKD841B-SjoNF6888vQA4P0XlOE4B7anbEsAYDdNG--ifAK8-X2h2ph9y51-RpksVBJkefd3GpWzp37zzeENXVH2E3EJf2eTtw5dWlaN271s5xK8nighbmq8AisL1PRr77xCO6jgVHMJFJ5heHaN4eHVS5xcRmwiVftmR03zIPXlZN5SQtpclgtSB3Nr5XR6Rayu8nMQ')"></div>
+</div>
+</div>
+<!-- Today -->
+<div class="relative grid grid-cols-1 md:grid-cols-2 gap-gutter md:gap-32 items-center reveal-on-scroll">
+<div class="md:text-right">
+<span class="font-display-lg text-display-lg text-brick-red/20 block mb-2 leading-none">Today</span>
+<h4 class="font-headline-md text-headline-md text-primary mb-4">Contemporary Sanctuary</h4>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md md:ml-auto">
+                                Now a multi-award winning institution, bridging traditional Levantine warmth with modern luxury across the globe.
+                            </p>
+</div>
+<div class="hidden md:block relative">
+<div class="w-4 h-4 rounded-full bg-brick-red absolute left-[-16px] top-1/2 -translate-x-1/2 -translate-y-1/2 ring-8 ring-surface"></div>
+<div class="aspect-video bg-cover bg-center rounded-lg shadow-sm" data-alt="A modern, high-luxury restaurant interior with white marble surfaces, light wood accents, and lush olive trees integrated into the design. The space is filled with bright, natural light streaming through floor-to-ceiling windows, creating a clean, airy, and sophisticated Mediterranean atmosphere." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC2L5NgH4nGpGkzbLByRfzw9pbhHOYkY16GWKCXNN4U7tORFVysXUyjnpnivnvX7H_g1QozXbL5tEjNlGS3C9VcoegIo_nvlok3biGhhjZNqYDqYLpcmhYcdXoCMXtj2RtDZpIHoaYNmS4QGiHIbclMxiFFi5jnvhEeCbhL-imJ0gBPyojEgJgQ8qv9Tkq4VvMJ6QtWjZvhJP5lX3ALysr9tsqvzb2HaFW3zI8Ab3bGPXKlG8oJpcMh4hMnrI53k3GgUhbHL83IPsQ')"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-marble-white dark:bg-surface-container-lowest border-t border-slate-blue/10 py-section-gap px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-[1280px] mx-auto">
+<div class="md:col-span-1">
+<span class="font-headline-lg text-headline-lg text-brick-red block mb-6">MISK BEIRUT</span>
+<p class="font-body-md text-body-md text-slate-blue/70">
+                    High-Luxury Mediterranean Hospitality since 1982.
+                </p>
+</div>
+<div>
+<h5 class="font-label-lg text-label-lg uppercase tracking-widest text-primary mb-6">Quick Links</h5>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-tertiary hover:text-brick-red transition-all hover:translate-x-1 inline-block" href="#">Locations</a></li>
+<li><a class="font-body-md text-body-md text-tertiary hover:text-brick-red transition-all hover:translate-x-1 inline-block" href="#">Our Menu</a></li>
+<li><a class="font-body-md text-body-md text-tertiary hover:text-brick-red transition-all hover:translate-x-1 inline-block" href="#">Reservations</a></li>
+<li><a class="font-body-md text-body-md text-tertiary hover:text-brick-red transition-all hover:translate-x-1 inline-block" href="#">Press Kit</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-lg text-label-lg uppercase tracking-widest text-primary mb-6">Legal</h5>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-tertiary hover:text-brick-red transition-all hover:translate-x-1 inline-block" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-body-md text-tertiary hover:text-brick-red transition-all hover:translate-x-1 inline-block" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-lg text-label-lg uppercase tracking-widest text-primary mb-6">Contact</h5>
+<ul class="space-y-4 font-body-md text-body-md text-tertiary">
+<li>Beirut, Lebanon</li>
+<li>+961 1 234 567</li>
+<li>hello@miskbeirut.com</li>
+</ul>
+</div>
+</div>
+<div class="max-w-[1280px] mx-auto mt-24 pt-8 border-t border-slate-blue/10">
+<p class="font-body-md text-body-md text-tertiary text-center">
+                © 2024 Misk Beirut. High-Luxury Mediterranean Hospitality.
+            </p>
+</div>
+</footer>
+<script>
+        // Simple Intersection Observer for reveal animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 20) {
+                nav.classList.add('py-2', 'bg-surface/95');
+                nav.classList.remove('py-4', 'bg-surface/80');
+            } else {
+                nav.classList.add('py-4', 'bg-surface/80');
+                nav.classList.remove('py-2', 'bg-surface/95');
+            }
+        });
+    </script>
+</body></html>

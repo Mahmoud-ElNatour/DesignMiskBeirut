@@ -1,0 +1,342 @@
+<!DOCTYPE html><html class="light" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Contact Us | Misk Beirut</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-primary": "#a6cbe5",
+                        "surface-variant": "#e2e2e4",
+                        "on-secondary-fixed-variant": "#7d2a2d",
+                        "error-container": "#ffdad6",
+                        "surface-container": "#eeeeef",
+                        "secondary-fixed-dim": "#ffb3b1",
+                        "on-secondary-fixed": "#410007",
+                        "brick-red": "#8F383A",
+                        "primary-container": "#4e7289",
+                        "on-tertiary-fixed-variant": "#454748",
+                        "on-primary-fixed-variant": "#254b60",
+                        "surface-container-high": "#e8e8ea",
+                        "on-primary-fixed": "#001e2d",
+                        "surface-container-low": "#f4f3f5",
+                        "on-secondary-container": "#762528",
+                        "secondary-fixed": "#ffdad8",
+                        "on-secondary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-container": "#f1f1f2",
+                        "secondary-container": "#fd8e8d",
+                        "slate-blue": "#4E7289",
+                        "primary-fixed-dim": "#a6cbe5",
+                        "on-primary-container": "#e5f3ff",
+                        "on-error": "#ffffff",
+                        "surface-bright": "#f9f9fb",
+                        "on-surface-variant": "#42474c",
+                        "background": "#f9f9fb",
+                        "onyx-text": "#1A1A1A",
+                        "secondary": "#9b4143",
+                        "primary": "#355970",
+                        "on-background": "#1a1c1d",
+                        "tertiary-container": "#6c6e6f",
+                        "surface-container-highest": "#e2e2e4",
+                        "tertiary-fixed": "#e2e2e3",
+                        "surface": "#f9f9fb",
+                        "surface-tint": "#3e6379",
+                        "outline": "#72787d",
+                        "tertiary": "#545657",
+                        "on-tertiary-fixed": "#1a1c1d",
+                        "inverse-on-surface": "#f1f0f2",
+                        "surface-dim": "#dadadc",
+                        "surface-container-lowest": "#ffffff",
+                        "error": "#ba1a1a",
+                        "outline-variant": "#c2c7cd",
+                        "inverse-surface": "#2f3132",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "primary-fixed": "#c6e7ff",
+                        "marble-white": "#F5F5F6",
+                        "on-surface": "#1a1c1d",
+                        "on-tertiary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "margin-desktop": "80px",
+                        "gutter": "24px",
+                        "stack-sm": "8px",
+                        "stack-md": "16px",
+                        "stack-lg": "48px",
+                        "section-gap": "120px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "headline-lg-mobile": ["EB Garamond"],
+                        "display-lg": ["EB Garamond"],
+                        "label-sm": ["Hanken Grotesk"],
+                        "headline-md": ["EB Garamond"],
+                        "label-lg": ["Hanken Grotesk"],
+                        "headline-lg": ["EB Garamond"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+                        "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "500"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                        "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "500"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .form-input-focus:focus {
+            border-bottom-width: 2px;
+            outline: none;
+        }
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+        .reveal-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-marble-white text-on-surface font-body-md overflow-x-auto">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md border-b border-outline/10 shadow-sm">
+<div class="max-w-[1280px] mx-auto px-[20px] md:px-[80px] flex justify-between items-center py-4">
+<div class="font-headline-md text-headline-md text-primary dark:text-primary-fixed-dim italic tracking-tight">
+                MISK BEIRUT
+            </div>
+<div class="hidden md:flex items-center gap-stack-lg font-label-lg text-label-lg uppercase tracking-widest">
+<a class="text-on-surface-variant dark:text-on-surface hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:text-primary transition-colors" href="#">About Us</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:text-primary transition-colors" href="#">Services</a>
+<a class="text-secondary dark:text-secondary-fixed-dim border-b border-secondary pb-1" href="#">Contact Us</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:text-primary transition-colors" href="#">Careers</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="font-label-lg text-label-lg uppercase tracking-widest text-primary hover:opacity-80 transition-opacity">
+                    EN/AR
+                </button>
+<button class="md:hidden flex items-center justify-center p-2 text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-[176px]">
+<!-- Hero Section -->
+<header class="py-[120px] reveal-on-scroll visible">
+<div class="max-w-[1280px] mx-auto px-[20px] md:px-[80px]">
+<div class="max-w-2xl">
+<h1 class="font-display-lg text-display-lg md:text-[80px] text-primary mb-[16px] leading-none">Get In Touch</h1>
+<p class="font-body-lg text-body-lg text-tertiary max-w-lg">
+                        Whether you are seeking a culinary escape, professional consultation, or have a general inquiry, our doors are always open.
+                    </p>
+</div>
+</div>
+</header>
+<!-- Main Content Section -->
+<section class="py-[120px]">
+<div class="max-w-[1280px] mx-auto px-[20px] md:px-[80px]">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-[24px] items-start">
+<!-- Left: Info Cards & Map -->
+<div class="md:col-span-4 space-y-[48px] reveal-on-scroll visible"><div class="space-y-[48px]"><div class="grid grid-cols-1 gap-[24px]"><div class="p-stack-lg bg-surface-container-lowest shadow-sm border border-slate-blue/10"><span class="material-symbols-outlined text-slate-blue mb-stack-md">call</span><h3 class="font-label-lg text-label-lg uppercase text-slate-blue mb-2">Call Us</h3><p class="font-body-md text-on-surface">+961 1 123 456</p><p class="font-body-md text-on-surface">+961 3 987 654</p></div><div class="p-stack-lg bg-surface-container-lowest shadow-sm border border-slate-blue/10"><span class="material-symbols-outlined text-slate-blue mb-stack-md">mail</span><h3 class="font-label-lg text-label-lg uppercase text-slate-blue mb-2">Email</h3><p class="font-body-md text-on-surface-variant block break-words">hello@miskbeirut.com</p></div><div class="p-stack-lg bg-surface-container-lowest shadow-sm border border-slate-blue/10"><span class="material-symbols-outlined text-slate-blue mb-stack-md">location_on</span><h3 class="font-label-lg text-label-lg uppercase text-slate-blue mb-2">Address</h3><p class="font-body-md text-on-surface">Gemmayzeh, Pasteur Street, Beirut</p></div></div><div class="w-full h-80 grayscale hover:grayscale-0 transition-all duration-700 overflow-hidden shadow-sm border border-slate-blue/10"><iframe allowfullscreen="" class="w-full h-full border-0" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13248.847525287515!2d35.51091565!3d33.8966774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f16f39369670f%3A0xc3b83c50937c050!2sBeirut%2C%20Lebanon!5e0!3m2!1sen!2sus!4v1715872145678!5m2!1sen!2sus"></iframe></div></div></div>
+<!-- Right: Contact Form -->
+<div class="md:col-span-7 md:col-start-6 bg-white p-12 shadow-[0px_4px_20px_rgba(0,0,0,0.04)] reveal-on-scroll delay-100 visible">
+<form class="space-y-[48px]" onsubmit="event.preventDefault(); alert('Message sent successfully.');">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-[24px]"><div class="relative pt-4"><input class="peer w-full bg-transparent border-0 border-b border-slate-blue/40 py-2 font-body-md text-on-surface placeholder-transparent focus:ring-0 focus:border-slate-blue transition-all" id="name" placeholder="Full Name" required="" type="text"><label class="absolute left-0 -top-1 text-label-sm uppercase tracking-wider text-slate-blue transition-all peer-placeholder-shown:text-body-md peer-placeholder-shown:top-2 peer-placeholder-shown:text-tertiary peer-focus:-top-1 peer-focus:text-label-sm peer-focus:text-slate-blue" for="name">Full Name *</label></div><div class="relative pt-4"><input class="peer w-full bg-transparent border-0 border-b border-slate-blue/40 py-2 font-body-md text-on-surface placeholder-transparent focus:ring-0 focus:border-slate-blue transition-all" id="phone" placeholder="Phone Number" type="tel"><label class="absolute left-0 -top-1 text-label-sm uppercase tracking-wider text-slate-blue transition-all peer-placeholder-shown:text-body-md peer-placeholder-shown:top-2 peer-placeholder-shown:text-tertiary peer-focus:-top-1 peer-focus:text-label-sm peer-focus:text-slate-blue" for="phone">Phone Number *</label></div></div>
+<!-- Email Address -->
+<div class="relative pt-4">
+<input class="peer w-full bg-transparent border-0 border-b border-slate-blue/40 py-2 font-body-md text-on-surface placeholder-transparent focus:ring-0 focus:border-slate-blue transition-all" id="email" placeholder="Email Address" type="email">
+<label class="absolute left-0 -top-1 text-label-sm uppercase tracking-wider text-slate-blue transition-all peer-placeholder-shown:text-body-md peer-placeholder-shown:top-2 peer-placeholder-shown:text-tertiary peer-focus:-top-1 peer-focus:text-label-sm peer-focus:text-slate-blue" for="email">Email Address (Optional)</label>
+</div>
+<!-- Reason for Contact -->
+<div class="relative pt-4 group" id="custom-dropdown-container">
+<input id="reason-input" name="reason" required="" type="hidden">
+<label class="absolute left-0 -top-1 text-label-sm uppercase tracking-wider text-slate-blue" for="reason-trigger">Reason for Contact *</label>
+<!-- Trigger -->
+<div class="flex justify-between items-center w-full bg-transparent border-0 border-b border-slate-blue/20 py-2 font-body-md text-on-surface cursor-pointer transition-all" id="reason-trigger">
+<span class="text-tertiary" id="trigger-text">Select a reason...</span>
+<span class="material-symbols-outlined text-slate-blue transition-transform duration-300" id="chevron-icon">expand_more</span>
+</div>
+<!-- Dropdown Panel -->
+<ul class="absolute left-0 right-0 top-full mt-1 bg-white shadow-md rounded-sm z-10 hidden opacity-0 transition-opacity duration-200" id="dropdown-panel">
+<li class="py-3 px-4 font-body-md text-on-surface hover:bg-surface-container-low hover:text-primary cursor-pointer transition-colors" data-value="Consulting">Consulting</li>
+<li class="py-3 px-4 font-body-md text-on-surface hover:bg-surface-container-low hover:text-primary cursor-pointer transition-colors" data-value="Feedback">Feedback</li>
+<li class="py-3 px-4 font-body-md text-on-surface hover:bg-surface-container-low hover:text-primary cursor-pointer transition-colors" data-value="Inquiry">General Inquiry</li>
+</ul>
+<!-- Error Message -->
+<p class="hidden text-brick-red text-label-sm mt-1" id="dropdown-error">Please select a reason for contact.</p>
+<script>
+    (function() {
+      const container = document.getElementById('custom-dropdown-container');
+      const trigger = document.getElementById('reason-trigger');
+      const panel = document.getElementById('dropdown-panel');
+      const chevron = document.getElementById('chevron-icon');
+      const input = document.getElementById('reason-input');
+      const triggerText = document.getElementById('trigger-text');
+      const errorMsg = document.getElementById('dropdown-error');
+      const form = container.closest('form');
+
+      const toggleDropdown = () => {
+        const isOpen = !panel.classList.contains('hidden');
+        if (isOpen) {
+          panel.classList.add('opacity-0');
+          setTimeout(() => panel.classList.add('hidden'), 200);
+          chevron.style.transform = 'rotate(0deg)';
+        } else {
+          panel.classList.remove('hidden');
+          setTimeout(() => panel.classList.remove('opacity-0'), 10);
+          chevron.style.transform = 'rotate(180deg)';
+        }
+      };
+
+      trigger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleDropdown();
+      });
+
+      panel.querySelectorAll('li').forEach(option => {
+        option.addEventListener('click', () => {
+          const val = option.getAttribute('data-value');
+          const text = option.textContent;
+          input.value = val;
+          triggerText.textContent = text;
+          triggerText.classList.remove('text-tertiary');
+          triggerText.classList.add('text-on-surface');
+          errorMsg.classList.add('hidden');
+          toggleDropdown();
+        });
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!container.contains(e.target)) {
+          panel.classList.add('opacity-0');
+          panel.classList.add('hidden');
+          chevron.style.transform = 'rotate(0deg)';
+        }
+      });
+
+      form.addEventListener('submit', (e) => {
+        if (!input.value) {
+          e.preventDefault();
+          errorMsg.classList.remove('hidden');
+        }
+      });
+    })();
+  </script>
+</div>
+<!-- Message -->
+<div class="relative pt-4">
+<textarea class="peer w-full bg-transparent border-0 border-b border-slate-blue/40 py-2 font-body-md text-on-surface placeholder-transparent focus:ring-0 focus:border-slate-blue transition-all resize-none" id="message" placeholder="Message" required="" rows="4"></textarea>
+<label class="absolute left-0 -top-1 text-label-sm uppercase tracking-wider text-slate-blue transition-all peer-placeholder-shown:text-body-md peer-placeholder-shown:top-2 peer-placeholder-shown:text-tertiary peer-focus:-top-1 peer-focus:text-label-sm peer-focus:text-slate-blue" for="message">Message *</label>
+</div>
+<div class="flex justify-start">
+<button class="group relative flex items-center gap-2 bg-slate-blue text-white font-label-lg text-label-lg uppercase tracking-widest px-8 py-4 overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1" type="submit">
+<span class="relative z-10">Send Inquiry</span>
+<span class="material-symbols-outlined relative z-10 transition-transform duration-300 group-hover:translate-x-1">send</span>
+<div class="absolute inset-0 bg-primary opacity-0 group-hover:opacity-20 transition-opacity"></div>
+</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-marble-white dark:bg-surface-container-lowest border-t border-slate-blue/10">
+<div class="max-w-[1280px] mx-auto px-[20px] md:px-[80px] py-[120px]">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-[24px]">
+<div class="md:col-span-1">
+<div class="font-headline-lg text-headline-lg text-brick-red mb-[16px] italic leading-none">
+                        MISK BEIRUT
+                    </div>
+<p class="font-body-md text-body-md text-slate-blue opacity-80 leading-relaxed">
+                        © 2024 Misk Beirut. High-Luxury Mediterranean Hospitality.
+                    </p>
+</div>
+<div class="md:col-span-1">
+<h4 class="font-label-lg text-label-lg uppercase tracking-widest text-slate-blue mb-[16px]">Quick Links</h4>
+<ul class="space-y-2">
+<li class=""><a class="font-body-md text-tertiary hover:text-brick-red transition-all hover:translate-x-1 inline-block" href="#">Locations</a></li>
+<li class=""><a class="font-body-md text-tertiary hover:text-brick-red transition-all hover:translate-x-1 inline-block" href="#">Press Kit</a></li>
+<li class=""><a class="font-body-md text-tertiary hover:text-brick-red transition-all hover:translate-x-1 inline-block" href="#">Careers</a></li>
+</ul>
+</div>
+<div class="md:col-span-1">
+<h4 class="font-label-lg text-label-lg uppercase tracking-widest text-slate-blue mb-[16px]">Legal</h4>
+<ul class="space-y-2">
+<li class=""><a class="font-body-md text-tertiary hover:text-brick-red transition-all hover:translate-x-1 inline-block" href="#">Privacy Policy</a></li>
+<li class=""><a class="font-body-md text-tertiary hover:text-brick-red transition-all hover:translate-x-1 inline-block" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div class="md:col-span-1">
+<h4 class="font-label-lg text-label-lg uppercase tracking-widest text-slate-blue mb-[16px]">Newsletter</h4>
+<p class="font-body-md text-tertiary mb-[16px]">Experience the Levantine taste.</p>
+<div class="flex gap-0 border-b border-slate-blue/40">
+<input class="bg-transparent border-0 py-2 w-full focus:ring-0 text-on-surface" placeholder="Your Email" type="email">
+<button class="text-slate-blue hover:text-brick-red transition-colors">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Divider and Copyright Line -->
+<div class="border-t border-slate-blue/10">
+<div class="max-w-[1280px] mx-auto px-[20px] md:px-[80px] py-[32px]">
+<p class="font-label-sm text-label-sm text-slate-blue opacity-60">© 2024 Misk Beirut. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script>
+        // Simple Intersection Observer for reveal-on-scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal-on-scroll').forEach((el) => observer.observe(el));
+
+        // Form interaction floating label logic
+        document.querySelectorAll('input, textarea, select').forEach(element => {
+            element.addEventListener('blur', (e) => {
+                if (e.target.value !== "") {
+                    e.target.classList.add('has-value');
+                } else {
+                    e.target.classList.remove('has-value');
+                }
+            });
+        });
+    </script>
+</body></html>

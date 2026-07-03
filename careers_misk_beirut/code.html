@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Careers | Misk Beirut</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Hanken+Grotesk:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-container": "#f1f1f2",
+                    "on-primary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "error": "#ba1a1a",
+                    "surface-dim": "#dadadc",
+                    "on-secondary-container": "#762528",
+                    "on-secondary-fixed-variant": "#7d2a2d",
+                    "secondary-fixed-dim": "#ffb3b1",
+                    "tertiary-fixed-dim": "#c6c6c7",
+                    "on-primary-fixed": "#001e2d",
+                    "outline": "#72787d",
+                    "surface-variant": "#e2e2e4",
+                    "on-tertiary-fixed-variant": "#454748",
+                    "on-tertiary-fixed": "#1a1c1d",
+                    "on-secondary": "#ffffff",
+                    "surface-tint": "#3e6379",
+                    "surface-container-highest": "#e2e2e4",
+                    "surface-bright": "#f9f9fb",
+                    "tertiary": "#545657",
+                    "primary": "#355970",
+                    "surface-container-high": "#e8e8ea",
+                    "on-secondary-fixed": "#410007",
+                    "on-background": "#1a1c1d",
+                    "primary-fixed-dim": "#a6cbe5",
+                    "surface-container": "#eeeeef",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-container": "#6c6e6f",
+                    "inverse-surface": "#2f3132",
+                    "outline-variant": "#c2c7cd",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-fixed": "#ffdad8",
+                    "secondary": "#9b4143",
+                    "surface-container-low": "#f4f3f5",
+                    "inverse-on-surface": "#f1f0f2",
+                    "secondary-container": "#fd8e8d",
+                    "tertiary-fixed": "#e2e2e3",
+                    "inverse-primary": "#a6cbe5",
+                    "on-error": "#ffffff",
+                    "slate-blue": "#4E7289",
+                    "primary-fixed": "#c6e7ff",
+                    "onyx-text": "#1A1A1A",
+                    "brick-red": "#8F383A",
+                    "primary-container": "#4e7289",
+                    "background": "#f9f9fb",
+                    "surface": "#f9f9fb",
+                    "on-primary-fixed-variant": "#254b60",
+                    "error-container": "#ffdad6",
+                    "on-primary-container": "#e5f3ff",
+                    "on-surface": "#1a1c1d",
+                    "marble-white": "#F5F5F6",
+                    "on-surface-variant": "#42474c"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "stack-sm": "8px",
+                    "gutter": "24px",
+                    "stack-md": "16px",
+                    "section-gap": "120px",
+                    "margin-desktop": "80px",
+                    "margin-mobile": "20px",
+                    "stack-lg": "48px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["EB Garamond"],
+                    "label-lg": ["Hanken Grotesk"],
+                    "display-lg": ["EB Garamond"],
+                    "label-sm": ["Hanken Grotesk"],
+                    "body-md": ["Hanken Grotesk"],
+                    "headline-md": ["EB Garamond"],
+                    "headline-lg-mobile": ["EB Garamond"],
+                    "body-lg": ["Hanken Grotesk"]
+            },
+            "fontSize": {
+                    "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "500"}],
+                    "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "500"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .form-input-focus:focus {
+            border-color: #8F383A;
+            outline: none;
+        }
+        .transition-form {
+            transition: max-height 0.5s ease-in-out, opacity 0.4s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface/80 backdrop-blur-md shadow-sm border-b border-on-surface/10">
+<nav class="flex justify-between items-center px-6 md:px-margin-desktop h-20 max-w-[1280px] mx-auto">
+<div class="font-headline-lg italic text-brick-red dark:text-secondary-container cursor-pointer transition-opacity duration-300 hover:opacity-80">
+                Misk Beirut
+            </div>
+<!-- Desktop Links -->
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors cursor-pointer" href="#">Home</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors cursor-pointer" href="#">About Us</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors cursor-pointer" href="#">Services</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-primary border-b-2 border-primary pb-1 cursor-pointer" href="#">Careers</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors cursor-pointer" href="#">Contact Us</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="font-label-lg text-label-lg uppercase text-primary transition-all duration-200 hover:opacity-80">AR/EN</button>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden material-symbols-outlined text-primary" onclick="toggleMobileMenu()">menu</button>
+</div>
+</nav>
+</header>
+<!-- Mobile Menu Overlay -->
+<div class="fixed inset-0 bg-surface z-[60] flex flex-col items-center justify-center gap-8 transform translate-x-full transition-transform duration-300 md:hidden" id="mobile-menu">
+<button class="absolute top-6 right-6 material-symbols-outlined text-primary text-3xl" onclick="toggleMobileMenu()">close</button>
+<a class="font-headline-md text-on-surface" href="#">Home</a>
+<a class="font-headline-md text-on-surface" href="#">About Us</a>
+<a class="font-headline-md text-on-surface" href="#">Services</a>
+<a class="font-headline-md text-brick-red" href="#">Careers</a>
+<a class="font-headline-md text-on-surface" href="#">Contact Us</a>
+</div>
+<main class="pt-20">
+<!-- Hero Header -->
+<section class="relative bg-primary-container/10 pt-[80px] pb-stack-lg px-6 md:px-margin-desktop">
+<div class="max-w-[1280px] mx-auto">
+<span class="font-label-lg text-label-lg text-brick-red uppercase tracking-[0.2em] mb-4 block">WE ARE HIRING</span>
+<h1 class="font-headline-lg text-headline-lg md:text-display-lg text-onyx-text mb-6">Careers at Misk Beirut</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                    Join a team dedicated to redefining Mediterranean hospitality. We seek visionaries, artisans, and professionals who share our passion for excellence and Levantine culture.
+                </p>
+</div>
+<!-- Decorative Element -->
+<div class="absolute right-0 top-0 w-1/3 h-full opacity-10 pointer-events-none hidden lg:block">
+<img class="w-full h-full object-cover" data-alt="A high-end architectural detail of a modern Lebanese restaurant interior, featuring sun-drenched marble floors and arched windows. The lighting is soft and warm, capturing the essence of a sophisticated Mediterranean afternoon. Pristine white walls contrast with dark wood textures, creating an editorial, luxury lifestyle aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrG1HU9jiVr-8Wn2Fm5iex47uAo0h1sHnHlW_uqvIOaesHotr02DT6PDsoSpz2QYySz1W_5Y6jl6ewWoMQGKjhrC0KxodVzbgdRAwS4w8h3FBNDuqvoYfON-hBiR7JuweJvXd8JZ98ruQbemyumsiTQZCwCUFCnoRUU_8oyGSn-yuWU62PZIcVclnmhAmZzexpp81ykRoz5QedPmzUaFaB7xwqdhH_8-iEaeCubM-5UY4gdjQD367JMPITI75ljnUHeXwoqPiil8I"/>
+</div>
+</section>
+<!-- Value Strip -->
+<section class="py-stack-lg border-b border-on-surface/10 px-6 md:px-margin-desktop">
+<div class="max-w-[1280px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<div class="flex flex-col items-center text-center p-6 bg-white/50 backdrop-blur hover:bg-white transition-colors duration-300">
+<span class="material-symbols-outlined text-brick-red text-4xl mb-4" style="font-variation-settings: 'FILL' 0;">trending_up</span>
+<h3 class="font-label-lg text-label-lg uppercase">Career Growth</h3>
+</div>
+<div class="flex flex-col items-center text-center p-6 bg-white/50 backdrop-blur hover:bg-white transition-colors duration-300">
+<span class="material-symbols-outlined text-brick-red text-4xl mb-4" style="font-variation-settings: 'FILL' 0;">diversity_3</span>
+<h3 class="font-label-lg text-label-lg uppercase">Diverse Culture</h3>
+</div>
+<div class="flex flex-col items-center text-center p-6 bg-white/50 backdrop-blur hover:bg-white transition-colors duration-300">
+<span class="material-symbols-outlined text-brick-red text-4xl mb-4" style="font-variation-settings: 'FILL' 0;">payments</span>
+<h3 class="font-label-lg text-label-lg uppercase">Competitive Benefits</h3>
+</div>
+<div class="flex flex-col items-center text-center p-6 bg-white/50 backdrop-blur hover:bg-white transition-colors duration-300">
+<span class="material-symbols-outlined text-brick-red text-4xl mb-4" style="font-variation-settings: 'FILL' 0;">restaurant</span>
+<h3 class="font-label-lg text-label-lg uppercase">Culinary Excellence</h3>
+</div>
+</div>
+</section>
+<!-- Vacancies -->
+<section class="py-section-gap px-6 md:px-margin-desktop bg-marble-white">
+<div class="max-w-[1280px] mx-auto">
+<div class="flex items-center gap-6 mb-stack-lg">
+<h2 class="font-headline-md text-headline-md whitespace-nowrap">Open Positions</h2>
+<div class="h-[1px] w-full bg-brick-red/20"></div>
+</div>
+<div class="grid grid-cols-1 gap-6">
+<!-- Vacancy Card 1 -->
+<div class="vacancy-item group">
+<div class="bg-white p-8 md:p-12 shadow-sm flex flex-col md:flex-row justify-between items-start md:items-center gap-6 hover:shadow-md transition-shadow">
+<div>
+<h3 class="font-headline-md text-headline-md mb-2">Head Chef</h3>
+<div class="flex flex-wrap gap-4 text-on-surface-variant font-label-sm uppercase tracking-wider">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">restaurant_menu</span> Culinary</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">location_on</span> Beirut</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">schedule</span> Full-Time</span>
+</div>
+</div>
+<button class="bg-slate-blue text-white px-8 py-3 font-label-lg text-label-lg uppercase tracking-widest hover:bg-brick-red transition-colors w-full md:w-auto" onclick="toggleApplication('head-chef')">Apply Now</button>
+</div>
+<!-- Inline Form -->
+<div class="max-height-0 overflow-hidden opacity-0 transition-form bg-white px-8 md:px-12 border-t border-slate-blue/10" id="form-head-chef">
+<form class="py-stack-lg space-y-8 max-w-3xl mx-auto">
+<h4 class="font-headline-md text-headline-md mb-4">Application for Head Chef</h4>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="relative">
+<label class="font-label-lg text-label-lg uppercase block mb-1">Full Name</label>
+<input class="w-full bg-transparent border-b border-slate-blue/30 py-2 form-input-focus transition-all" placeholder="YOUR NAME" type="text"/>
+</div>
+<div class="relative">
+<label class="font-label-lg text-label-lg uppercase block mb-1">Phone Number</label>
+<input class="w-full bg-transparent border-b border-slate-blue/30 py-2 form-input-focus transition-all" placeholder="+961 00 000 000" type="tel"/>
+</div>
+</div>
+<div class="relative">
+<label class="font-label-lg text-label-lg uppercase block mb-1">Email Address</label>
+<input class="w-full bg-transparent border-b border-slate-blue/30 py-2 form-input-focus transition-all" placeholder="EMAIL@EXAMPLE.COM" type="email"/>
+</div>
+<div class="relative">
+<label class="font-label-lg text-label-lg uppercase block mb-1">Cover Message</label>
+<textarea class="w-full bg-transparent border-b border-slate-blue/30 py-2 form-input-focus transition-all resize-none" placeholder="TELL US ABOUT YOUR EXPERIENCE" rows="3"></textarea>
+</div>
+<div class="relative">
+<label class="font-label-lg text-label-lg uppercase block mb-2">Upload CV (PDF)</label>
+<input class="block w-full text-sm text-slate-blue file:mr-4 file:py-2 file:px-4 file:rounded-none file:border-0 file:text-sm file:font-label-lg file:bg-slate-blue/10 file:text-slate-blue hover:file:bg-slate-blue/20 cursor-pointer" type="file"/>
+</div>
+<button class="bg-brick-red text-white px-12 py-4 font-label-lg text-label-lg uppercase tracking-widest hover:opacity-90 transition-opacity" type="button">Submit Application</button>
+</form>
+</div>
+</div>
+<!-- Vacancy Card 2 -->
+<div class="vacancy-item group">
+<div class="bg-white p-8 md:p-12 shadow-sm flex flex-col md:flex-row justify-between items-start md:items-center gap-6 hover:shadow-md transition-shadow">
+<div>
+<h3 class="font-headline-md text-headline-md mb-2">F&amp;B Consultant</h3>
+<div class="flex flex-wrap gap-4 text-on-surface-variant font-label-sm uppercase tracking-wider">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">business_center</span> Consulting</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">public</span> Remote</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">schedule</span> Full-Time</span>
+</div>
+</div>
+<button class="bg-slate-blue text-white px-8 py-3 font-label-lg text-label-lg uppercase tracking-widest hover:bg-brick-red transition-colors w-full md:w-auto" onclick="toggleApplication('fb-consultant')">Apply Now</button>
+</div>
+<div class="max-height-0 overflow-hidden opacity-0 transition-form bg-white px-8 md:px-12 border-t border-slate-blue/10" id="form-fb-consultant">
+<!-- Duplicate Form (Simplified for brevity in the HTML, usually handled by JS/Framework) -->
+<form class="py-stack-lg space-y-8 max-w-3xl mx-auto">
+<h4 class="font-headline-md text-headline-md mb-4">Application for F&amp;B Consultant</h4>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="relative">
+<label class="font-label-lg text-label-lg uppercase block mb-1">Full Name</label>
+<input class="w-full bg-transparent border-b border-slate-blue/30 py-2 form-input-focus transition-all" placeholder="YOUR NAME" type="text"/>
+</div>
+<div class="relative">
+<label class="font-label-lg text-label-lg uppercase block mb-1">Phone Number</label>
+<input class="w-full bg-transparent border-b border-slate-blue/30 py-2 form-input-focus transition-all" placeholder="+961 00 000 000" type="tel"/>
+</div>
+</div>
+<button class="bg-brick-red text-white px-12 py-4 font-label-lg text-label-lg uppercase tracking-widest hover:opacity-90 transition-opacity" type="button">Submit Application</button>
+</form>
+</div>
+</div>
+<!-- Vacancy Card 3 -->
+<div class="vacancy-item group">
+<div class="bg-white p-8 md:p-12 shadow-sm flex flex-col md:flex-row justify-between items-start md:items-center gap-6 hover:shadow-md transition-shadow">
+<div>
+<h3 class="font-headline-md text-headline-md mb-2">Events Coordinator</h3>
+<div class="flex flex-wrap gap-4 text-on-surface-variant font-label-sm uppercase tracking-wider">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">celebration</span> Events</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">location_on</span> Beirut</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">schedule</span> Full-Time</span>
+</div>
+</div>
+<button class="bg-slate-blue text-white px-8 py-3 font-label-lg text-label-lg uppercase tracking-widest hover:bg-brick-red transition-colors w-full md:w-auto" onclick="toggleApplication('events-coord')">Apply Now</button>
+</div>
+<div class="max-height-0 overflow-hidden opacity-0 transition-form bg-white px-8 md:px-12 border-t border-slate-blue/10" id="form-events-coord">
+<form class="py-stack-lg space-y-8 max-w-3xl mx-auto">
+<h4 class="font-headline-md text-headline-md mb-4">Application for Events Coordinator</h4>
+<button class="bg-brick-red text-white px-12 py-4 font-label-lg text-label-lg uppercase tracking-widest hover:opacity-90 transition-opacity" type="button">Submit Application</button>
+</form>
+</div>
+</div>
+<!-- Vacancy Card 4 -->
+<div class="vacancy-item group">
+<div class="bg-white p-8 md:p-12 shadow-sm flex flex-col md:flex-row justify-between items-start md:items-center gap-6 hover:shadow-md transition-shadow">
+<div>
+<h3 class="font-headline-md text-headline-md mb-2">Restaurant Manager</h3>
+<div class="flex flex-wrap gap-4 text-on-surface-variant font-label-sm uppercase tracking-wider">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">apartment</span> Operations</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">location_on</span> Beirut</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">schedule</span> Full-Time</span>
+</div>
+</div>
+<button class="bg-slate-blue text-white px-8 py-3 font-label-lg text-label-lg uppercase tracking-widest hover:bg-brick-red transition-colors w-full md:w-auto" onclick="toggleApplication('res-manager')">Apply Now</button>
+</div>
+<div class="max-height-0 overflow-hidden opacity-0 transition-form bg-white px-8 md:px-12 border-t border-slate-blue/10" id="form-res-manager">
+<form class="py-stack-lg space-y-8 max-w-3xl mx-auto">
+<h4 class="font-headline-md text-headline-md mb-4">Application for Restaurant Manager</h4>
+<button class="bg-brick-red text-white px-12 py-4 font-label-lg text-label-lg uppercase tracking-widest hover:opacity-90 transition-opacity" type="button">Submit Application</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / Culture Teaser -->
+<section class="grid grid-cols-1 md:grid-cols-2 items-stretch">
+<div class="bg-slate-blue text-white p-12 md:p-24 flex flex-col justify-center">
+<h2 class="font-headline-lg text-headline-lg mb-6">Our Culture</h2>
+<p class="font-body-lg text-body-lg mb-8 opacity-90">At Misk Beirut, we believe the best experiences are built by those who value hospitality as an art form. We provide a space where talent is nurtured and culinary dreams are realized.</p>
+<div class="flex">
+<button class="border border-white px-10 py-3 font-label-lg text-label-lg uppercase tracking-widest hover:bg-white hover:text-slate-blue transition-all">Learn More</button>
+</div>
+</div>
+<div class="min-h-[400px]">
+<img class="w-full h-full object-cover" data-alt="A candid, high-resolution lifestyle photograph of a professional culinary team collaborating in a modern, luxury kitchen. The scene shows a diverse group of chefs in crisp white uniforms focused on plating exquisite Mediterranean dishes. Bright natural light floods the stainless steel and marble workspace, highlighting the precision and passion of the environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBm3jJoNgH5s_rjzKLIalc1OKH9G55ORI52lhD7OeGph-n2gcT5dekQLAYWRpwCa12EvucvrjYgo0cCAG4lDJlj96TyCKzg8f1jJQZQ3VlcJa6BHfZ5cU85A4Z6drunWobaEUcuTeigHzlJKfNOwoW1JK5Th93ZwxpQU9N_SGCu9992NM3FTarqoG2q5zLSNpDJ3MPGjG_8XcUdxCpAFMUPJy0lgcKypJMN5tDH2ca6Av5415pdZeIZGYMYl7u9kVHG2ppuQ0DY5vI"/>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-marble-white dark:bg-surface-container-low w-full py-stack-lg border-t border-slate-blue/10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-6 md:px-margin-desktop max-w-[1280px] mx-auto">
+<div class="space-y-6">
+<div class="font-headline-lg italic text-brick-red dark:text-secondary-container">Misk Beirut</div>
+<p class="font-body-md text-on-surface-variant max-w-xs">Elevating Mediterranean traditions through visionary consulting and authentic culinary experiences.</p>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-lg text-label-lg uppercase text-slate-blue">Company</h4>
+<div class="flex flex-col gap-2">
+<a class="font-body-md text-on-surface-variant hover:text-brick-red transition-colors underline-offset-4 hover:underline" href="#">Brand Story</a>
+<a class="font-body-md text-on-surface-variant hover:text-brick-red transition-colors underline-offset-4 hover:underline" href="#">Our Services</a>
+<a class="font-body-md text-brick-red font-bold underline-offset-4 hover:underline" href="#">Careers</a>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-lg text-label-lg uppercase text-slate-blue">Contact</h4>
+<div class="flex flex-col gap-2">
+<a class="font-body-md text-on-surface-variant hover:text-brick-red transition-colors underline-offset-4 hover:underline" href="#">Contact Us</a>
+<p class="font-body-md text-on-surface-variant">Beirut, Lebanon</p>
+<p class="font-body-md text-on-surface-variant">+961 1 234 567</p>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-lg text-label-lg uppercase text-slate-blue">Legal</h4>
+<div class="flex flex-col gap-2">
+<a class="font-body-md text-on-surface-variant hover:text-brick-red transition-colors underline-offset-4 hover:underline" href="#">Privacy Policy</a>
+<a class="font-body-md text-on-surface-variant hover:text-brick-red transition-colors underline-offset-4 hover:underline" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+<div class="max-w-[1280px] mx-auto px-6 md:px-margin-desktop mt-12 pt-8 border-t border-slate-blue/10 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-body-md text-on-surface-variant/60">© 2024 Misk Beirut. All rights reserved.</p>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-slate-blue/60 cursor-pointer hover:text-brick-red transition-colors">public</span>
+<span class="material-symbols-outlined text-slate-blue/60 cursor-pointer hover:text-brick-red transition-colors">share</span>
+<span class="material-symbols-outlined text-slate-blue/60 cursor-pointer hover:text-brick-red transition-colors">mail</span>
+</div>
+</div>
+</footer>
+<script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('translate-x-full')) {
+                menu.classList.remove('translate-x-full');
+            } else {
+                menu.classList.add('translate-x-full');
+            }
+        }
+
+        function toggleApplication(id) {
+            const form = document.getElementById('form-' + id);
+            const allForms = document.querySelectorAll('.transition-form');
+            
+            allForms.forEach(f => {
+                if (f.id !== 'form-' + id) {
+                    f.style.maxHeight = '0px';
+                    f.style.opacity = '0';
+                    f.classList.remove('py-stack-lg');
+                }
+            });
+
+            if (form.style.maxHeight === '0px' || !form.style.maxHeight) {
+                form.style.maxHeight = '2000px'; // Arbitrary large value
+                form.style.opacity = '1';
+                form.classList.add('py-stack-lg');
+            } else {
+                form.style.maxHeight = '0px';
+                form.style.opacity = '0';
+                form.classList.remove('py-stack-lg');
+            }
+        }
+
+        // Initialize forms as closed
+        document.addEventListener('DOMContentLoaded', () => {
+            const forms = document.querySelectorAll('.transition-form');
+            forms.forEach(f => {
+                f.style.maxHeight = '0px';
+                f.style.opacity = '0';
+            });
+        });
+    </script>
+</body></html>

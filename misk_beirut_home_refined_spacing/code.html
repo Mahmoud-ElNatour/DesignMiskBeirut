@@ -1,0 +1,422 @@
+<!DOCTYPE html><html class="scroll-smooth" data-stitch-anim-opacity="true" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Misk Beirut | High-Luxury Mediterranean Hospitality</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#355970",
+                        "tertiary-fixed": "#e2e2e3",
+                        "on-error": "#ffffff",
+                        "outline": "#72787d",
+                        "on-secondary-fixed-variant": "#7d2a2d",
+                        "primary-fixed-dim": "#a6cbe5",
+                        "primary-fixed": "#c6e7ff",
+                        "on-tertiary-container": "#f1f1f2",
+                        "on-primary-container": "#e5f3ff",
+                        "secondary": "#9b4143",
+                        "surface-container": "#eeeeef",
+                        "on-background": "#1a1c1d",
+                        "slate-blue": "#4E7289",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#1a1c1d",
+                        "surface-container-low": "#f4f3f5",
+                        "on-secondary": "#ffffff",
+                        "on-surface-variant": "#42474c",
+                        "on-secondary-fixed": "#410007",
+                        "secondary-fixed-dim": "#ffb3b1",
+                        "inverse-primary": "#a6cbe5",
+                        "on-secondary-container": "#762528",
+                        "marble-white": "#F5F5F6",
+                        "on-primary": "#ffffff",
+                        "secondary-container": "#fd8e8d",
+                        "surface-container-high": "#e8e8ea",
+                        "primary-container": "#4e7289",
+                        "error-container": "#ffdad6",
+                        "surface": "#f9f9fb",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#001e2d",
+                        "surface-tint": "#3e6379",
+                        "on-error-container": "#93000a",
+                        "inverse-on-surface": "#f1f0f2",
+                        "on-primary-fixed-variant": "#254b60",
+                        "inverse-surface": "#2f3132",
+                        "on-tertiary-fixed-variant": "#454748",
+                        "outline-variant": "#c2c7cd",
+                        "surface-container-highest": "#e2e2e4",
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "background": "#f9f9fb",
+                        "secondary-fixed": "#ffdad8",
+                        "surface-dim": "#dadadc",
+                        "tertiary-container": "#6c6e6f",
+                        "on-surface": "#1a1c1d",
+                        "surface-variant": "#e2e2e4",
+                        "surface-bright": "#f9f9fb",
+                        "onyx-text": "#1A1A1A",
+                        "brick-red": "#8F383A",
+                        "error": "#ba1a1a",
+                        "tertiary": "#545657"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-desktop": "80px",
+                        "stack-md": "16px",
+                        "stack-lg": "48px",
+                        "stack-sm": "8px",
+                        "margin-mobile": "20px",
+                        "section-gap": "120px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["EB Garamond"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "headline-lg": ["EB Garamond"],
+                        "headline-md": ["EB Garamond"],
+                        "display-lg": ["EB Garamond"],
+                        "label-sm": ["Hanken Grotesk"],
+                        "body-md": ["Hanken Grotesk"],
+                        "label-lg": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "500"}],
+                        "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                        "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "500"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(53, 89, 112, 0.4), rgba(53, 89, 112, 0.6));
+        }
+        @keyframes scroll-indicator {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+        .animate-scroll {
+            animation: scroll-indicator 2s infinite;
+        }
+    </style>
+</head>
+<body class="bg-marble-white text-on-surface font-body-md">
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline/10 shadow-sm transition-all duration-300">
+<div class="max-w-[1280px] mx-auto px-[20px] md:px-[80px] flex justify-between items-center py-4">
+<a class="font-headline-md text-headline-md text-primary italic uppercase tracking-tighter" href="#">MISK BEIRUT</a>
+<div class="hidden md:flex items-center gap-[24px]">
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-secondary border-b border-secondary pb-1" href="#home">Home</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#about">About Us</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#services">Services</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#careers">Careers</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#contact">Contact Us</a>
+</div>
+<button class="font-label-lg text-label-lg uppercase tracking-widest text-primary hover:opacity-80 transition-opacity">EN/AR</button>
+</div>
+</nav>
+<!-- 1. HERO SECTION -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden py-[96px]" id="home">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBk0plMgb1g9EiKBfiJ_w7OfeWYJyvxPRduMltuI77vrXzTOcxZKxlksbUDZkNLBwiwtUIHoQMcEfvL0vY-iEGXbSOZEpzZ5tmmCnhLNeDwqV-Djx4j1Af8ic7nYPoqZvdv2e6nk1WToioNoh1Q585d9XjIO2ySbMEqqQk-MwdGdjFb4w1tkSH48xAxOC4v5V2n8NkxHH5T1C6GJkWOkq7gKi_i_slmIdRb3CFcQKKTtoKJ0JuUAVCRSosNfa6zYPEv-I78l5bqY3k&quot;);"></div>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 max-w-[1280px] mx-auto px-[20px] md:px-[80px] text-center text-white">
+<h1 class="font-display-lg text-display-lg mb-[16px]">Welcome to Misk Beirut</h1>
+<p class="font-headline-md text-headline-md italic mb-[48px]">Where heritage meets culinary excellence</p>
+<div class="flex flex-col md:flex-row items-center justify-center gap-[24px]">
+<button class="bg-brick-red text-white px-10 py-4 font-label-lg text-label-lg uppercase tracking-widest hover:bg-opacity-90 transition-all shadow-xl">Reserve a Table</button>
+<button class="border border-white text-white px-10 py-4 font-label-lg text-label-lg uppercase tracking-widest hover:bg-white hover:text-primary transition-all flex items-center gap-2 group">
+                    Explore More
+                    <span class="material-symbols-outlined group-hover:translate-y-1 transition-transform">south</span>
+</button>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-scroll flex flex-col items-center text-white opacity-60">
+<span class="material-symbols-outlined text-4xl">keyboard_double_arrow_down</span>
+</div>
+</section>
+<!-- 2. ABOUT US SECTION -->
+<section class="bg-marble-white py-[120px] pt-[80px]" id="about">
+<div class="max-w-[1280px] mx-auto px-[20px] md:px-[80px] grid grid-cols-1 md:grid-cols-12 gap-[24px] items-center">
+<div class="md:col-span-6 relative group overflow-hidden">
+<img alt="About Misk Beirut" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPzt89bFCPorHZemKwIfi48TgN5a19ZcfWGqzi1jX9c_N_0rIEnuUOhpnA77y5P1XNiVxM036yGmMlreCR4zzTks3JewaXxQWMmd9PlVpIAW7kiSficYMU3qMstRD8M5v6xFaLoTHMvLBCsh_HI52IGzUSkl0X4wUfpRUY36QAttHphl8TplHR5gpd_HxPXsUh9JJYnzhKH_xR85TvrCmH4vSR0UmLNJ_A2HoJaUAt_e1bEzHjGEV3w86-qtQozuF3u3kiV8wWi3A">
+<div class="absolute inset-0 border-[20px] border-white/20 pointer-events-none"></div>
+</div>
+<div class="md:col-span-6 md:col-start-7">
+<div class="mb-[8px]">
+<span class="text-brick-red font-label-lg text-label-lg uppercase tracking-widest">Since 1982</span>
+</div>
+<h2 class="font-display-lg text-headline-lg text-primary mb-[16px]">Our Story</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-[48px]">
+                    Misk Beirut began as a humble family kitchen in the heart of the Levant, driven by a singular vision: to preserve the soul of Mediterranean hospitality while elevating it for the modern epicurean. Today, we stand as a beacon of luxury, where every ingredient is sourced with editorial precision and every recipe tells a story of generational mastery.
+                </p>
+<div class="grid grid-cols-3 gap-[24px] mb-[48px]">
+<div class="flex flex-col items-center text-center space-y-2">
+<span class="material-symbols-outlined text-brick-red text-3xl">temple_hindu</span>
+<span class="font-label-sm text-label-sm uppercase">Heritage</span>
+</div>
+<div class="flex flex-col items-center text-center space-y-2">
+<span class="material-symbols-outlined text-brick-red text-3xl">verified</span>
+<span class="font-label-sm text-label-sm uppercase">Quality</span>
+</div>
+<div class="flex flex-col items-center text-center space-y-2">
+<span class="material-symbols-outlined text-brick-red text-3xl">groups</span>
+<span class="font-label-sm text-label-sm uppercase">Community</span>
+</div>
+</div>
+<p class="font-headline-md text-headline-md italic text-brick-red border-l-2 border-brick-red pl-6 leading-snug mb-[48px]">
+                    "An honest approach to food, focusing on the integrity of ingredients and the warmth of Lebanese tradition."
+                </p>
+<button class="bg-slate-blue text-white px-10 py-4 font-label-lg text-label-lg uppercase tracking-widest hover:opacity-90 transition-all shadow-md">Learn More About Us</button>
+</div>
+</div>
+</section>
+<!-- 3. SERVICES SECTION -->
+<section class="bg-surface py-[120px]" id="services">
+<div class="max-w-[1280px] mx-auto px-[20px] md:px-[80px]">
+<div class="text-center mb-[48px]">
+<h2 class="font-display-lg text-headline-lg text-primary mb-[16px]">What We Offer</h2>
+<div class="w-24 h-0.5 bg-brick-red mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-[24px]">
+<!-- Primary Service 1: Event Venue -->
+<a class="group relative h-[450px] overflow-hidden bg-primary flex flex-col justify-end p-10 transition-all" href="venue-services.html">
+<div class="absolute inset-0 z-0">
+<img alt="Event Venue Services" class="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBk0plMgb1g9EiKBfiJ_w7OfeWYJyvxPRduMltuI77vrXzTOcxZKxlksbUDZkNLBwiwtUIHoQMcEfvL0vY-iEGXbSOZEpzZ5tmmCnhLNeDwqV-Djx4j1Af8ic7nYPoqZvdv2e6nk1WToioNoh1Q585d9XjIO2ySbMEqqQk-MwdGdjFb4w1tkSH48xAxOC4v5V2n8NkxHH5T1C6GJkWOkq7gKi_i_slmIdRb3CFcQKKTtoKJ0JuUAVCRSosNfa6zYPEv-I78l5bqY3k">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent"></div>
+</div>
+<div class="relative z-10">
+<h3 class="font-display-lg text-headline-md text-white mb-[16px]">Our Offerings</h3>
+<p class="text-primary-fixed text-body-md max-w-sm mb-[16px]">Exquisite settings for all types of events. A calm enviroment for studying and working.</p>
+<div class="flex items-center gap-2 text-white font-label-lg text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all translate-y-4 group-hover:translate-y-0">
+                            Explore Venues <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+</a>
+<!-- Primary Service 2: F&B Consultancy -->
+<a class="group relative h-[450px] overflow-hidden bg-slate-blue flex flex-col justify-end p-10 transition-all" href="fnb-consultancy.html">
+<div class="absolute inset-0 z-0">
+<img alt="F&amp;B Consultancy" class="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/AP1WRLvp6KdtLwSn6QDuYmEwmrPKD4FA0l7LSxzoBz7EJVzIhUVa0X6hdqe2u9LmlVjOcPbREkD9w5BWXyZWmH9V2cVzd1lRSRHmr-CK-Ojedn-ChSCrYj7LvtisHTbLf8lCPVN95KOWYzSdt526dxHHHxiIulUtqkUCkCu97G-d2ESgs59YmukEJiQ_PcfM5obpCbTJVeWmq1dt1bwGcq_rdxICg9FwzzNmiMBQVicPRvIxYEPEWXywUESLxA">
+<div class="absolute inset-0 bg-gradient-to-t from-slate-blue/90 to-transparent"></div>
+</div>
+<div class="relative z-10">
+<h3 class="font-display-lg text-headline-md text-white mb-[16px]">F&amp;B Consultancy</h3>
+<p class="text-primary-fixed text-body-md max-w-sm mb-[16px]">Strategic culinary analytics and menu engineering for the modern restaurateur looking to excel.</p>
+<div class="flex items-center gap-2 text-white font-label-lg text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all translate-y-4 group-hover:translate-y-0">
+                            Our Expertise <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!-- 4. CAREERS SECTION -->
+<section class="bg-primary text-white py-[120px]" id="careers">
+<div class="max-w-[1280px] mx-auto px-[20px] md:px-[80px]">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-[120px] items-center">
+<div class="order-2 md:order-1">
+<div class="mb-[8px]">
+<span class="text-secondary-fixed-dim font-label-lg text-label-lg uppercase tracking-widest">Join Our Family</span>
+</div>
+<h2 class="font-display-lg text-headline-lg mb-[16px]">Build Your Career With Us</h2>
+<p class="font-body-lg text-body-lg text-primary-fixed leading-relaxed mb-[48px]">
+                        At Misk Beirut, we believe that luxury is a service of the heart. We are looking for passionate individuals who strive for excellence and find joy in the art of hospitality. Join a team where your growth is our priority and culture is our foundation.
+                    </p>
+<div class="flex flex-wrap gap-[48px] mb-[48px]">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-slate-blue/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary-fixed-dim">trending_up</span>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg uppercase">Career Growth</h4>
+<p class="text-sm opacity-60">Structured paths for advancement.</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-slate-blue/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary-fixed-dim">volunteer_activism</span>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg uppercase">Diverse Culture</h4>
+<p class="text-sm opacity-60">Global community, local soul.</p>
+</div>
+</div>
+</div>
+<button class="bg-brick-red text-white px-10 py-4 font-label-lg text-label-lg uppercase tracking-widest hover:bg-opacity-90 transition-all transform hover:translate-x-2">View Open Positions</button>
+</div>
+<div class="order-1 md:order-2 relative h-[500px]">
+<img alt="Misk Beirut Team" class="w-full h-full object-cover rounded-sm shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrmkU3nrbSzmsbTLE4fjBALqOioPr4np00gbFxcNaLMPxWdtSjVVVXoVW5tDKWLXBtUMpsPpUH-0WjTS-4O0cMJdthSSwFIsZN-LfaBfzYtNKiwWKWhnaCcQ1OvhftpL0mkz5972A4xbW8ZNkJMIqYt1Il9-rInH-JtjvNQwZ1xYB748IbcZ7RfZCmq0qFOoogLYC73e9-7dirwIlhVmDcJInnky-JezndmEmNlXYRtzBqjuAPYH88Aw19w4SWlIWYFjC_tUpdANY">
+<div class="absolute -bottom-10 -left-10 w-48 h-48 border border-white/20 -z-10"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. CONTACT SECTION -->
+<section class="bg-marble-white py-[120px]" id="contact">
+<div class="max-w-[1280px] mx-auto px-[20px] md:px-[80px] grid grid-cols-1 md:grid-cols-12 gap-[24px]">
+<div class="md:col-span-4">
+<h2 class="font-display-lg text-headline-lg text-primary mb-[48px]">Get In Touch</h2>
+<div class="grid grid-cols-1 gap-[24px]">
+<div class="bg-white p-6 shadow-[0px_4px_20px_rgba(0,0,0,0.04)] hover:shadow-md transition-shadow group">
+<span class="material-symbols-outlined text-brick-red mb-2 group-hover:scale-110 transition-transform">phone_in_talk</span>
+<h4 class="font-label-lg text-label-lg uppercase mb-1">Call Us</h4>
+<p class="text-on-surface-variant">+961 1 234 567</p>
+</div>
+<div class="bg-white p-6 shadow-[0px_4px_20px_rgba(0,0,0,0.04)] hover:shadow-md transition-shadow group">
+<span class="material-symbols-outlined text-brick-red mb-2 group-hover:scale-110 transition-transform">mail</span>
+<h4 class="font-label-lg text-label-lg uppercase mb-1">Email</h4>
+<p class="text-on-surface-variant">concierge@miskbeirut.com</p>
+</div>
+<div class="bg-white p-6 shadow-[0px_4px_20px_rgba(0,0,0,0.04)] hover:shadow-md transition-shadow group">
+<span class="material-symbols-outlined text-brick-red mb-2 group-hover:scale-110 transition-transform">location_on</span>
+<h4 class="font-label-lg text-label-lg uppercase mb-1">Address</h4>
+<p class="text-on-surface-variant">123 Rue de Gourmet, Beirut, Lebanon</p>
+</div>
+<div class="bg-white p-6 shadow-[0px_4px_20px_rgba(0,0,0,0.04)] hover:shadow-md transition-shadow group">
+<span class="material-symbols-outlined text-brick-red mb-2 group-hover:scale-110 transition-transform">schedule</span>
+<h4 class="font-label-lg text-label-lg uppercase mb-1">Hours</h4>
+<p class="text-on-surface-variant">Daily: 12:00 PM - 12:00 AM</p>
+</div>
+</div>
+</div>
+<div class="md:col-span-8 bg-white p-10 shadow-[0px_4px_20px_rgba(0,0,0,0.04)]">
+<div class="space-y-[48px]">
+<div class="w-full h-[450px] bg-surface-container overflow-hidden relative grayscale hover:grayscale-0 transition-all duration-700">
+<!-- Embedded Map Placeholder -->
+<iframe allowfullscreen="" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.834712345678!2d35.5017!3d33.8938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f17215880a787%3A0x49621703add375d!2sBeirut%2C%20Lebanon!5e0!3m2!1sen!2slb!4v1710000000000!5m2!1sen!2slb" style="border:0;" width="100%">
+</iframe>
+</div>
+<div class="flex justify-center md:justify-end">
+<a class="bg-slate-blue text-white px-12 py-5 font-label-lg text-label-lg uppercase tracking-widest hover:bg-primary transition-all flex items-center gap-4 group" href="contact-us.html">
+                            Get In Touch
+                            <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. TESTIMONIALS -->
+<section class="py-[120px] bg-marble-white">
+<div class="max-w-[1280px] mx-auto px-[20px] md:px-[80px]">
+<h2 class="font-display-lg text-headline-lg text-primary text-center mb-[48px]">What Our Guests Say</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-[24px] relative">
+<div class="absolute -top-12 left-0 text-slate-blue/10 font-display-lg text-[200px] leading-none pointer-events-none select-none">“</div>
+<div class="bg-white p-8 border border-outline/5 relative z-10 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex gap-1 mb-[16px]">
+<span class="material-symbols-outlined text-brick-red text-sm fill-[1]">star</span>
+<span class="material-symbols-outlined text-brick-red text-sm fill-[1]">star</span>
+<span class="material-symbols-outlined text-brick-red text-sm fill-[1]">star</span>
+<span class="material-symbols-outlined text-brick-red text-sm fill-[1]">star</span>
+<span class="material-symbols-outlined text-brick-red text-sm fill-[1]">star</span>
+</div>
+<p class="font-headline-md italic mb-[48px] leading-relaxed">"The best mezze I've ever had outside of my grandmother's kitchen. The ambiance is truly world-class."</p>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-slate-blue/20"></div>
+<div>
+<p class="font-label-lg text-label-lg uppercase">Sofia Rossi</p>
+<p class="text-xs text-on-surface-variant">Milan, Italy</p>
+</div>
+</div>
+</div>
+<div class="bg-white p-8 border border-outline/5 relative z-10 transform md:translate-y-8 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex gap-1 mb-[16px]">
+<span class="material-symbols-outlined text-brick-red text-sm fill-[1]">star</span>
+<span class="material-symbols-outlined text-brick-red text-sm fill-[1]">star</span>
+<span class="material-symbols-outlined text-brick-red text-sm fill-[1]">star</span>
+<span class="material-symbols-outlined text-brick-red text-sm fill-[1]">star</span>
+<span class="material-symbols-outlined text-brick-red text-sm fill-[1]">star</span>
+</div>
+<p class="font-headline-md italic mb-[48px] leading-relaxed">"Editorial-level presentation with flavors that stay true to their roots. A masterpiece of modern dining."</p>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-slate-blue/20"></div>
+<div>
+<p class="font-label-lg text-label-lg uppercase">Julian Vane</p>
+<p class="text-xs text-on-surface-variant">Food Critic</p>
+</div>
+</div>
+</div>
+<div class="bg-white p-8 border border-outline/5 relative z-10 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex gap-1 mb-[16px]">
+<span class="material-symbols-outlined text-brick-red text-sm fill-[1]">star</span>
+<span class="material-symbols-outlined text-brick-red text-sm fill-[1]">star</span>
+<span class="material-symbols-outlined text-brick-red text-sm fill-[1]">star</span>
+<span class="material-symbols-outlined text-brick-red text-sm fill-[1]">star</span>
+<span class="material-symbols-outlined text-brick-red text-sm fill-[1]">star</span>
+</div>
+<p class="font-headline-md italic mb-[48px] leading-relaxed">"The hospitality here is unparalleled. It's not just a meal; it's a feeling of coming home."</p>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-slate-blue/20"></div>
+<div>
+<p class="font-label-lg text-label-lg uppercase">Amina Al-Farsi</p>
+<p class="text-xs text-on-surface-variant">Dubai, UAE</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-marble-white border-t border-slate-blue/10">
+<div class="max-w-[1280px] mx-auto px-[20px] md:px-[80px] py-[120px] grid grid-cols-1 md:grid-cols-3 gap-[24px]">
+<div class="space-y-[16px]">
+<a class="font-headline-lg text-headline-lg text-brick-red italic uppercase" href="#">MISK BEIRUT</a>
+<p class="font-body-md text-body-md text-slate-blue max-w-xs leading-relaxed">
+                    Authentic Mediterranean soul reimagined for the modern luxury experience. Since 1982.
+                </p>
+</div>
+<div class="space-y-[16px]">
+<h4 class="font-label-lg text-label-lg uppercase text-primary font-bold">Explore</h4>
+<ul class="space-y-3">
+<li class=""><a class="text-tertiary hover:text-brick-red transition-colors inline-block" href="#">Our Menu</a></li>
+<li class=""><a class="text-tertiary hover:text-brick-red transition-colors inline-block" href="#services">Services</a></li>
+<li class=""><a class="text-tertiary hover:text-brick-red transition-colors inline-block" href="#about">About Us</a></li>
+<li class=""><a class="text-tertiary hover:text-brick-red transition-colors inline-block" href="#careers">Careers</a></li>
+</ul>
+</div>
+<div class="space-y-[16px]">
+<h4 class="font-label-lg text-label-lg uppercase text-primary font-bold">Company</h4>
+<ul class="space-y-3">
+<li class=""><a class="text-tertiary hover:text-brick-red transition-colors inline-block" href="#">Privacy Policy</a></li>
+<li class=""><a class="text-tertiary hover:text-brick-red transition-colors inline-block" href="#">Terms of Service</a></li>
+<li class=""><a class="text-tertiary hover:text-brick-red transition-colors inline-block" href="#">Locations</a></li>
+<li class=""><a class="text-tertiary hover:text-brick-red transition-colors inline-block" href="#">Press Kit</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-slate-blue/10">
+<div class="max-w-[1280px] mx-auto px-[20px] md:px-[80px] py-[32px] flex flex-col md:flex-row justify-between items-center gap-4 text-sm opacity-60">
+<p class="">© 2024 Misk Beirut.</p>
+<div class="flex gap-4 items-center">
+<a aria-label="Instagram" class="hover:text-brick-red transition-colors" href="#"><div class="w-6 h-6 flex items-center justify-center">IG</div></a>
+<a aria-label="Facebook" class="hover:text-brick-red transition-colors" href="#"><div class="w-6 h-6 flex items-center justify-center">FB</div></a>
+</div>
+</div>
+</div>
+</footer>
+<div aria-hidden="true" data-snapdom-sandbox="true" id="snapdom-sandbox" style="position: absolute; left: -9999px; top: -9999px; width: 0px; height: 0px; overflow: hidden;"></div>
+
+
+
+
+</body></html>
