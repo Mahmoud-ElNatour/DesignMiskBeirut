@@ -1,0 +1,424 @@
+
+<!DOCTYPE html><html class="scroll-smooth" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Our Spaces | Misk Beirut</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#355970",
+                        "tertiary-fixed": "#e2e2e3",
+                        "on-error": "#ffffff",
+                        "outline": "#72787d",
+                        "on-secondary-fixed-variant": "#7d2a2d",
+                        "primary-fixed-dim": "#a6cbe5",
+                        "primary-fixed": "#c6e7ff",
+                        "on-tertiary-container": "#f1f1f2",
+                        "on-primary-container": "#e5f3ff",
+                        "secondary": "#9b4143",
+                        "surface-container": "#eeeeef",
+                        "on-background": "#1a1c1d",
+                        "slate-blue": "#4E7289",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#1a1c1d",
+                        "surface-container-low": "#f4f3f5",
+                        "on-secondary": "#ffffff",
+                        "on-surface-variant": "#42474c",
+                        "on-secondary-fixed": "#410007",
+                        "secondary-fixed-dim": "#ffb3b1",
+                        "inverse-primary": "#a6cbe5",
+                        "on-secondary-container": "#762528",
+                        "marble-white": "#F5F5F6",
+                        "on-primary": "#ffffff",
+                        "secondary-container": "#fd8e8d",
+                        "surface-container-high": "#e8e8ea",
+                        "primary-container": "#4e7289",
+                        "error-container": "#ffdad6",
+                        "surface": "#f9f9fb",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#001e2d",
+                        "surface-tint": "#3e6379",
+                        "on-error-container": "#93000a",
+                        "inverse-on-surface": "#f1f0f2",
+                        "on-primary-fixed-variant": "#254b60",
+                        "inverse-surface": "#2f3132",
+                        "on-tertiary-fixed-variant": "#454748",
+                        "outline-variant": "#c2c7cd",
+                        "surface-container-highest": "#e2e2e4",
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "background": "#f9f9fb",
+                        "secondary-fixed": "#ffdad8",
+                        "surface-dim": "#dadadc",
+                        "tertiary-container": "#6c6e6f",
+                        "on-surface": "#1a1c1d",
+                        "surface-variant": "#e2e2e4",
+                        "surface-bright": "#f9f9fb",
+                        "onyx-text": "#1A1A1A",
+                        "brick-red": "#8F383A",
+                        "error": "#ba1a1a",
+                        "tertiary": "#545657"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-desktop": "80px",
+                        "stack-md": "16px",
+                        "stack-lg": "48px",
+                        "stack-sm": "8px",
+                        "margin-mobile": "20px",
+                        "section-gap": "120px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["EB Garamond"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "headline-lg": ["EB Garamond"],
+                        "headline-md": ["EB Garamond"],
+                        "display-lg": ["EB Garamond"],
+                        "label-sm": ["Hanken Grotesk"],
+                        "body-md": ["Hanken Grotesk"],
+                        "label-lg": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "500"}],
+                        "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                        "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "500"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-marble-white text-on-surface font-body-md">
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline/10 shadow-sm transition-all duration-300">
+<div class="max-w-[1280px] mx-auto px-[20px] md:px-[80px] flex justify-between items-center py-4">
+<a class="font-headline-md text-headline-md text-primary italic uppercase tracking-tighter" href="../misk_beirut_home_refined_spacing/code.html">MISK BEIRUT</a>
+<div class="hidden md:flex items-center gap-[24px]">
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="../misk_beirut_home_refined_spacing/code.html">Home</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="../about_misk_beirut_photo/code.html">About Misk</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-secondary border-b border-secondary pb-1" href="#dining-shisha">Our Spaces</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="../misk_beirut_home_refined_spacing/code.html#menu">Menu</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="../events/code.html">Events</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="../contact_us_final_prototype_restored_fixed/code.html">Reservations</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="../contact_us_final_prototype_restored_fixed/code.html">Contact Us</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="font-label-lg text-label-lg uppercase tracking-widest text-primary hover:opacity-80 transition-opacity" onclick="toggleLanguage()">EN/AR</button>
+<button class="md:hidden flex items-center justify-center p-2 text-primary hover:opacity-80 transition-opacity" onclick="toggleMobileMenu()" aria-label="Toggle Menu">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</div>
+</div>
+</nav>
+
+<!-- Mobile Menu Drawer -->
+<div id="mobile-drawer" class="fixed inset-y-0 right-0 z-50 w-full max-w-[300px] bg-surface/95 backdrop-blur-md shadow-2xl border-l border-outline/10 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col p-6 md:hidden">
+<div class="flex justify-between items-center mb-10">
+<img src="https://raw.githubusercontent.com/Mahmoud-ElNatour/DesignMiskBeirut/main/Gemini_Generated_Image_xzb084xzb084xzb0-removebg-preview.png" alt="Misk Beirut" class="h-8 object-contain">
+<button class="text-primary hover:opacity-80 transition-opacity" onclick="toggleMobileMenu()" aria-label="Close Menu">
+<span class="material-symbols-outlined text-3xl">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-6">
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors py-2 border-b border-outline/5" href="../misk_beirut_home_refined_spacing/code.html" onclick="toggleMobileMenu()">Home</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors py-2 border-b border-outline/5" href="../about_misk_beirut_photo/code.html" onclick="toggleMobileMenu()">About Misk</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-secondary border-b border-secondary pb-1 self-start py-2" href="#dining-shisha" onclick="toggleMobileMenu()">Our Spaces</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors py-2 border-b border-outline/5" href="../misk_beirut_home_refined_spacing/code.html#menu" onclick="toggleMobileMenu()">Menu</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors py-2 border-b border-outline/5" href="../events/code.html" onclick="toggleMobileMenu()">Events</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors py-2 border-b border-outline/5" href="../contact_us_final_prototype_restored_fixed/code.html" onclick="toggleMobileMenu()">Reservations</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors py-2 border-b border-outline/5" href="../contact_us_final_prototype_restored_fixed/code.html" onclick="toggleMobileMenu()">Contact Us</a>
+</div>
+<div class="mt-auto pt-6 flex flex-col gap-4">
+<button class="font-label-lg text-label-lg uppercase tracking-widest text-primary hover:opacity-80 transition-opacity py-2 border border-primary/20 w-full text-center" onclick="toggleLanguage()">EN/AR</button>
+</div>
+</div>
+<!-- Mobile Menu Backdrop -->
+<div id="mobile-backdrop" class="fixed inset-0 z-40 bg-black/20 backdrop-blur-sm hidden opacity-0 transition-opacity duration-300 md:hidden" onclick="toggleMobileMenu()"></div>
+
+<!-- PAGE HEADER -->
+<section class="relative min-h-[400px] flex items-center justify-center overflow-hidden py-[120px]" id="header">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-gradient-to-b from-primary/20 to-slate-blue/20"></div>
+</div>
+<div class="relative z-10 max-w-[1280px] mx-auto px-[20px] md:px-[80px] text-center">
+<h1 class="font-display-lg text-display-lg text-primary mb-[16px]">Our Spaces</h1>
+<p class="font-headline-md text-headline-md text-on-surface-variant max-w-2xl mx-auto">A place for every moment — from long dinners to quiet mornings</p>
+</div>
+</section>
+
+<!-- DINING & SHISHA -->
+<section class="bg-marble-white py-[120px]" id="dining-shisha">
+<div class="max-w-[1280px] mx-auto px-[20px] md:px-[80px]">
+<div class="text-center mb-[48px]">
+<h2 class="font-display-lg text-headline-lg text-primary mb-[16px]">Dining &amp; Shisha</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Elegant dining spaces with authentic Lebanese hospitality, paired with a curated shisha experience.</p>
+<div class="w-24 h-0.5 bg-brick-red mx-auto mt-[16px]"></div>
+</div>
+
+<!-- PLACEHOLDER: real photos pending client photoshoot -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-[24px]">
+<div class="h-[300px] bg-slate-blue/10 border border-outline/20 flex items-center justify-center text-on-surface-variant">
+<span class="text-center">
+<span class="material-symbols-outlined text-6xl mb-2 block opacity-50">restaurant</span>
+<p class="font-label-lg mb-2">PLACEHOLDER</p>
+<p class="text-sm opacity-60">Dining Area</p>
+</span>
+</div>
+<div class="h-[300px] bg-slate-blue/10 border border-outline/20 flex items-center justify-center text-on-surface-variant">
+<span class="text-center">
+<span class="material-symbols-outlined text-6xl mb-2 block opacity-50">restaurant</span>
+<p class="font-label-lg mb-2">PLACEHOLDER</p>
+<p class="text-sm opacity-60">Shisha Lounge</p>
+</span>
+</div>
+<div class="h-[300px] bg-slate-blue/10 border border-outline/20 flex items-center justify-center text-on-surface-variant">
+<span class="text-center">
+<span class="material-symbols-outlined text-6xl mb-2 block opacity-50">restaurant</span>
+<p class="font-label-lg mb-2">PLACEHOLDER</p>
+<p class="text-sm opacity-60">Evening Ambiance</p>
+</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- INDOOR & OUTDOOR SPACES -->
+<section class="bg-surface py-[120px]" id="indoor-outdoor">
+<div class="max-w-[1280px] mx-auto px-[20px] md:px-[80px]">
+<div class="text-center mb-[48px]">
+<h2 class="font-display-lg text-headline-lg text-primary mb-[16px]">Indoor &amp; Outdoor Spaces</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Versatile venues for any gathering, with stunning ambiance inside and out.</p>
+<div class="w-24 h-0.5 bg-brick-red mx-auto mt-[16px]"></div>
+</div>
+
+<!-- PLACEHOLDER: real photos pending client photoshoot -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-[24px]">
+<div class="h-[300px] bg-slate-blue/10 border border-outline/20 flex items-center justify-center text-on-surface-variant">
+<span class="text-center">
+<span class="material-symbols-outlined text-6xl mb-2 block opacity-50">location_city</span>
+<p class="font-label-lg mb-2">PLACEHOLDER</p>
+<p class="text-sm opacity-60">Indoor Salon</p>
+</span>
+</div>
+<div class="h-[300px] bg-slate-blue/10 border border-outline/20 flex items-center justify-center text-on-surface-variant">
+<span class="text-center">
+<span class="material-symbols-outlined text-6xl mb-2 block opacity-50">deck</span>
+<p class="font-label-lg mb-2">PLACEHOLDER</p>
+<p class="text-sm opacity-60">Outdoor Terrace</p>
+</span>
+</div>
+<div class="h-[300px] bg-slate-blue/10 border border-outline/20 flex items-center justify-center text-on-surface-variant">
+<span class="text-center">
+<span class="material-symbols-outlined text-6xl mb-2 block opacity-50">yard</span>
+<p class="font-label-lg mb-2">PLACEHOLDER</p>
+<p class="text-sm opacity-60">Garden Seating</p>
+</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- WORK & CASUAL MEETINGS -->
+<section class="bg-marble-white py-[120px]" id="work-meetings">
+<div class="max-w-[1280px] mx-auto px-[20px] md:px-[80px]">
+<div class="text-center mb-[48px]">
+<h2 class="font-display-lg text-headline-lg text-primary mb-[16px]">Work &amp; Casual Meetings</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">A calm environment for studying, working, and informal gatherings.</p>
+<div class="w-24 h-0.5 bg-brick-red mx-auto mt-[16px]"></div>
+</div>
+
+<!-- PLACEHOLDER: real photos pending client photoshoot -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-[24px] mb-[48px]">
+<div class="h-[300px] bg-slate-blue/10 border border-outline/20 flex items-center justify-center text-on-surface-variant">
+<span class="text-center">
+<span class="material-symbols-outlined text-6xl mb-2 block opacity-50">business_center</span>
+<p class="font-label-lg mb-2">PLACEHOLDER</p>
+<p class="text-sm opacity-60">Quiet Corners</p>
+</span>
+</div>
+<div class="h-[300px] bg-slate-blue/10 border border-outline/20 flex items-center justify-center text-on-surface-variant">
+<span class="text-center">
+<span class="material-symbols-outlined text-6xl mb-2 block opacity-50">wifi</span>
+<p class="font-label-lg mb-2">PLACEHOLDER</p>
+<p class="text-sm opacity-60">Work-Friendly Seating</p>
+</span>
+</div>
+<div class="h-[300px] bg-slate-blue/10 border border-outline/20 flex items-center justify-center text-on-surface-variant">
+<span class="text-center">
+<span class="material-symbols-outlined text-6xl mb-2 block opacity-50">coffee</span>
+<p class="font-label-lg mb-2">PLACEHOLDER</p>
+<p class="text-sm opacity-60">Casual Meeting Tables</p>
+</span>
+</div>
+</div>
+
+<div class="text-center">
+<a href="../contact_us_final_prototype_restored_fixed/code.html" class="bg-brick-red text-white px-12 py-5 font-label-lg text-label-lg uppercase tracking-widest hover:bg-opacity-90 transition-all inline-block">Reserve a Table</a>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-marble-white border-t border-slate-blue/10 mt-[120px]">
+<div class="max-w-[1280px] mx-auto px-[20px] md:px-[80px] py-[60px]">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-[48px] mb-[48px]">
+<!-- Footer Column 1: Brand -->
+<div class="md:col-span-1">
+<img src="https://raw.githubusercontent.com/Mahmoud-ElNatour/DesignMiskBeirut/main/Gemini_Generated_Image_xzb084xzb084xzb0-removebg-preview.png" alt="Misk Beirut" class="max-w-[120px] h-auto mb-[16px]">
+<p class="text-sm text-on-surface-variant leading-relaxed">Luxury Mediterranean hospitality in the heart of Beirut.</p>
+</div>
+
+<!-- Footer Column 2: Navigation -->
+<div class="md:col-span-1">
+<h4 class="font-label-lg text-label-lg uppercase tracking-widest text-primary mb-[16px]">Navigation</h4>
+<ul class="space-y-[8px]">
+<li><a href="../misk_beirut_home_refined_spacing/code.html" class="text-sm text-on-surface-variant hover:text-primary transition-colors">Home</a></li>
+<li><a href="../about_misk_beirut_photo/code.html" class="text-sm text-on-surface-variant hover:text-primary transition-colors">About Misk</a></li>
+<li><a href="./code.html" class="text-sm text-on-surface-variant hover:text-primary transition-colors">Our Spaces</a></li>
+<li><a href="../misk_beirut_home_refined_spacing/code.html#menu" class="text-sm text-on-surface-variant hover:text-primary transition-colors">Menu</a></li>
+<li><a href="../events/code.html" class="text-sm text-on-surface-variant hover:text-primary transition-colors">Events</a></li>
+<li><a href="../contact_us_final_prototype_restored_fixed/code.html" class="text-sm text-on-surface-variant hover:text-primary transition-colors">Reservations</a></li>
+</ul>
+</div>
+
+<!-- Footer Column 3: Connect -->
+<div class="md:col-span-1">
+<h4 class="font-label-lg text-label-lg uppercase tracking-widest text-primary mb-[16px]">Connect</h4>
+<ul class="space-y-[8px] mb-[24px]">
+<li><a href="../careers_misk_beirut/code.html" class="text-sm text-on-surface-variant hover:text-primary transition-colors">Careers</a></li>
+<li><a href="#" class="text-sm text-on-surface-variant hover:text-primary transition-colors">Privacy Policy</a></li>
+</ul>
+<h4 class="font-label-lg text-label-lg uppercase tracking-widest text-primary mb-[16px] mt-[24px]">Follow Us</h4>
+<div class="flex gap-[16px]">
+<a aria-label="Instagram" class="hover:text-brick-red transition-colors" href="#" target="_blank" rel="noopener noreferrer">
+<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+</a>
+<a aria-label="Facebook" class="hover:text-brick-red transition-colors" href="#" target="_blank" rel="noopener noreferrer">
+<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/></svg>
+</a>
+</div>
+</div>
+
+<!-- Footer Column 4: CTA -->
+<div class="md:col-span-1">
+<h4 class="font-label-lg text-label-lg uppercase tracking-widest text-primary mb-[16px]">Ready to Visit?</h4>
+<a href="../contact_us_final_prototype_restored_fixed/code.html" class="block w-full bg-brick-red text-white px-6 py-4 font-label-lg text-label-lg uppercase tracking-widest hover:bg-opacity-90 transition-all text-center shadow-md mb-[24px]">Reserve a Table</a>
+<p class="text-xs text-on-surface-variant opacity-60">+961 1 234 567<br>concierge@miskbeirut.com</p>
+</div>
+</div>
+
+<!-- Footer Bottom -->
+<div class="border-t border-slate-blue/10 pt-[32px] flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-sm text-on-surface-variant opacity-60">© <span id="current-year">2026</span> Misk Beirut. All rights reserved.</p>
+<div class="flex gap-[24px] text-sm">
+<a href="#" class="text-on-surface-variant hover:text-primary transition-colors">Privacy Policy</a>
+<a href="#" class="text-on-surface-variant hover:text-primary transition-colors">Terms & Conditions</a>
+</div>
+</div>
+</div>
+</footer>
+
+<script>
+// Update copyright year dynamically
+document.addEventListener('DOMContentLoaded', function() {
+    const currentYear = new Date().getFullYear();
+    const yearElement = document.getElementById('current-year');
+    if (yearElement) {
+        yearElement.textContent = currentYear;
+    }
+
+    // Load language preference from localStorage
+    const savedLanguage = localStorage.getItem('language') || 'en';
+    if (savedLanguage === 'ar') {
+        applyArabicRTL();
+    }
+});
+
+// Mobile menu toggle logic
+function toggleMobileMenu() {
+    const drawer = document.getElementById('mobile-drawer');
+    const backdrop = document.getElementById('mobile-backdrop');
+    if (drawer.classList.contains('translate-x-full')) {
+        drawer.classList.remove('translate-x-full');
+        backdrop.classList.remove('hidden');
+        setTimeout(() => backdrop.classList.add('opacity-100'), 10);
+        document.body.style.overflow = 'hidden';
+    } else {
+        drawer.classList.add('translate-x-full');
+        backdrop.classList.remove('opacity-100');
+        setTimeout(() => backdrop.classList.add('hidden'), 300);
+        document.body.style.overflow = '';
+    }
+}
+
+// Language toggle function
+function toggleLanguage() {
+    const html = document.documentElement;
+    const currentLang = html.getAttribute('lang');
+
+    if (currentLang === 'en') {
+        html.setAttribute('lang', 'ar');
+        html.setAttribute('dir', 'rtl');
+        localStorage.setItem('language', 'ar');
+        applyArabicRTL();
+    } else {
+        html.setAttribute('lang', 'en');
+        html.removeAttribute('dir');
+        localStorage.setItem('language', 'en');
+        removeArabicRTL();
+    }
+}
+
+// Apply Arabic RTL styles
+function applyArabicRTL() {
+    const html = document.documentElement;
+    html.setAttribute('dir', 'rtl');
+
+    // Flexbox rows already mirror natively under dir="rtl"; these rules
+    // only cover physical (non-logical) utilities.
+    if (!document.getElementById('rtl-styles')) {
+        const style = document.createElement('style');
+        style.id = 'rtl-styles';
+        style.textContent = `
+            html[dir="rtl"] body { text-align: right; }
+            html[dir="rtl"] .text-center { text-align: center; }
+            html[dir="rtl"] .border-l-2 { border-left-width: 0; border-right-width: 2px; }
+            html[dir="rtl"] .border-l { border-left-width: 0; border-right-width: 1px; }
+            html[dir="rtl"] .pl-6 { padding-left: 0; padding-right: 1.5rem; }
+            html[dir="rtl"] #mobile-drawer { right: auto; left: 0; border-left: none; border-right: 1px solid rgba(114,120,125,0.1); }
+            html[dir="rtl"] #mobile-drawer.translate-x-full { transform: translateX(-100%); }
+        `;
+        document.head.appendChild(style);
+    }
+}
+
+// Remove Arabic RTL styles
+function removeArabicRTL() {
+    const rtlStyles = document.getElementById('rtl-styles');
+    if (rtlStyles) {
+        rtlStyles.remove();
+    }
+}
+</script>
+</body></html>
