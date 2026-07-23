@@ -111,20 +111,19 @@
     </style>
 </head>
 <body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+<!-- Navigation -->
 <nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline/10 shadow-sm transition-all duration-300">
 <div class="max-w-[1280px] mx-auto px-[20px] md:px-[80px] flex justify-between items-center py-4">
 <a class="font-headline-md text-headline-md text-primary italic uppercase tracking-tighter" href="../misk_beirut_home_refined_spacing/code.html">MISK BEIRUT</a>
 <div class="hidden md:flex items-center gap-[24px]">
 <a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="../misk_beirut_home_refined_spacing/code.html">Home</a>
 <a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="../about_misk_beirut_photo/code.html">About Misk</a>
-<a class="font-label-lg text-label-lg uppercase tracking-widest text-secondary border-b border-secondary pb-1" href="../venue_event_spaces_final_prototype/code.html">Our Spaces</a>
-<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">Menu</a>
-<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">Events</a>
-<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="../contact_us_final_prototype_restored_fixed/code.html">Reservations</a>
-<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="../contact_us_final_prototype_restored_fixed/code.html">Contact Us</a>
-</div>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="../our_spaces/code.html">Our Spaces</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="../misk_beirut_home_refined_spacing/code.html#menu">Menu</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="../events/code.html">Events</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="../contact_us_final_prototype_restored_fixed/code.html">Reservations</a></div>
 <div class="flex items-center gap-4">
-<button class="font-label-lg text-label-lg uppercase tracking-widest text-primary hover:opacity-80 transition-opacity">EN/AR</button>
+<button class="font-label-lg text-label-lg uppercase tracking-widest text-primary hover:opacity-80 transition-opacity" onclick="toggleLanguage()">EN/AR</button>
 <button class="md:hidden flex items-center justify-center p-2 text-primary hover:opacity-80 transition-opacity" onclick="toggleMobileMenu()" aria-label="Toggle Menu">
 <span class="material-symbols-outlined text-2xl">menu</span>
 </button>
@@ -141,14 +140,19 @@
 </button>
 </div>
 <div class="flex flex-col gap-6">
-<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors py-2 border-b border-outline/5" href="../misk_beirut_home_refined_spacing/code.html">Home</a>
-<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors py-2 border-b border-outline/5" href="../about_misk_beirut_photo/code.html">About Us</a>
-<a class="font-label-lg text-label-lg uppercase tracking-widest text-secondary border-b border-secondary pb-1 self-start py-2" href="../our_services_main_hub_final_prototype/code.html" onclick="toggleMobileMenu()">Services</a>
-<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors py-2 border-b border-outline/5" href="../careers_misk_beirut/code.html">Careers</a>
-<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors py-2 border-b border-outline/5" href="../contact_us_final_prototype_restored_fixed/code.html">Contact Us</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors self-start py-2" href="../misk_beirut_home_refined_spacing/code.html" onclick="toggleMobileMenu()">Home</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors py-2 border-b border-outline/5" href="../about_misk_beirut_photo/code.html" onclick="toggleMobileMenu()">About Misk</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors py-2 border-b border-outline/5" href="../our_spaces/code.html" onclick="toggleMobileMenu()">Our Spaces</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors py-2 border-b border-outline/5" href="../misk_beirut_home_refined_spacing/code.html#menu">Menu</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors py-2 border-b border-outline/5" href="../events/code.html">Events</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors py-2 border-b border-outline/5" href="../contact_us_final_prototype_restored_fixed/code.html" onclick="toggleMobileMenu()">Reservations</a>
 </div>
 <div class="mt-auto pt-6 flex flex-col gap-4">
-<button class="font-label-lg text-label-lg uppercase tracking-widest text-primary hover:opacity-80 transition-opacity py-2 border border-primary/20 w-full text-center">EN/AR</button>
+<button class="font-label-lg text-label-lg uppercase tracking-widest text-primary hover:opacity-80 transition-opacity py-2 border border-primary/20 w-full text-center" onclick="toggleLanguage()">EN/AR</button>
+<div class="flex gap-4 justify-center text-sm opacity-60 mt-4">
+<a aria-label="Instagram" class="hover:text-brick-red transition-colors" href="#"><div class="w-6 h-6 flex items-center justify-center"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></div></a>
+<a aria-label="Facebook" class="hover:text-brick-red transition-colors" href="#"><div class="w-6 h-6 flex items-center justify-center"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/></svg></div></a>
+</div>
 </div>
 </div>
 <!-- Mobile Menu Backdrop -->
@@ -218,22 +222,150 @@
         </a>
 </section>
 </main>
+<!-- Footer -->
 <footer class="bg-marble-white border-t border-slate-blue/10">
-<div class="max-w-[1280px] mx-auto px-[20px] md:px-[80px] py-[48px] flex flex-col md:flex-row justify-between items-center gap-8 md:gap-0">
-<img src="https://raw.githubusercontent.com/Mahmoud-ElNatour/DesignMiskBeirut/main/Gemini_Generated_Image_xzb084xzb084xzb0-removebg-preview.png" alt="Misk Beirut" class="max-w-[120px] h-auto">
-<p class="text-sm text-on-surface-variant opacity-50 text-center md:text-right">© 2026 Misk Beirut.</p>
+<div class="max-w-[1280px] mx-auto px-[20px] md:px-[80px] py-[60px]">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-[48px] mb-[48px]">
+<!-- Footer Column 1: Brand -->
+<div class="md:col-span-1">
+<img src="https://raw.githubusercontent.com/Mahmoud-ElNatour/DesignMiskBeirut/main/Gemini_Generated_Image_xzb084xzb084xzb0-removebg-preview.png" alt="Misk Beirut" class="max-w-[120px] h-auto mb-[16px]">
+<p class="text-sm text-on-surface-variant leading-relaxed">Luxury Mediterranean hospitality in the heart of Beirut.</p>
+</div>
+
+<!-- Footer Column 2: Navigation -->
+<div class="md:col-span-1">
+<h4 class="font-label-lg text-label-lg uppercase tracking-widest text-primary mb-[16px]">Navigation</h4>
+<ul class="space-y-[8px]">
+<li><a href="../misk_beirut_home_refined_spacing/code.html" class="text-sm text-on-surface-variant hover:text-primary transition-colors">Home</a></li>
+<li><a href="../about_misk_beirut_photo/code.html" class="text-sm text-on-surface-variant hover:text-primary transition-colors">About Misk</a></li>
+<li><a href="../our_spaces/code.html" class="text-sm text-on-surface-variant hover:text-primary transition-colors">Our Spaces</a></li>
+<li><a href="../misk_beirut_home_refined_spacing/code.html#menu" class="text-sm text-on-surface-variant hover:text-primary transition-colors">Menu</a></li>
+<li><a href="../events/code.html" class="text-sm text-on-surface-variant hover:text-primary transition-colors">Events</a></li>
+<li><a href="../contact_us_final_prototype_restored_fixed/code.html" class="text-sm text-on-surface-variant hover:text-primary transition-colors">Reservations</a></li>
+</ul>
+</div>
+
+<!-- Footer Column 3: Connect -->
+<div class="md:col-span-1">
+<h4 class="font-label-lg text-label-lg uppercase tracking-widest text-primary mb-[16px]">Connect</h4>
+<ul class="space-y-[8px] mb-[24px]">
+<li><a href="../careers_misk_beirut/code.html" class="text-sm text-on-surface-variant hover:text-primary transition-colors">Careers</a></li>
+<li><a href="#" class="text-sm text-on-surface-variant hover:text-primary transition-colors">Privacy Policy</a></li>
+</ul>
+<h4 class="font-label-lg text-label-lg uppercase tracking-widest text-primary mb-[16px] mt-[24px]">Follow Us</h4>
+<div class="flex gap-[16px]">
+<a aria-label="Instagram" class="hover:text-brick-red transition-colors" href="#" target="_blank" rel="noopener noreferrer">
+<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+</a>
+<a aria-label="Facebook" class="hover:text-brick-red transition-colors" href="#" target="_blank" rel="noopener noreferrer">
+<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/></svg>
+</a>
+</div>
+</div>
+
+<!-- Footer Column 4: CTA -->
+<div class="md:col-span-1">
+<h4 class="font-label-lg text-label-lg uppercase tracking-widest text-primary mb-[16px]">Ready to Visit?</h4>
+<a href="../contact_us_final_prototype_restored_fixed/code.html" class="block w-full bg-brick-red text-white px-6 py-4 font-label-lg text-label-lg uppercase tracking-widest hover:bg-opacity-90 transition-all text-center shadow-md mb-[24px]">Reserve a Table</a>
+<p class="text-xs text-on-surface-variant opacity-60">+961 1 234 567<br>concierge@miskbeirut.com</p>
+</div>
+</div>
+
+<!-- Footer Bottom -->
+<div class="border-t border-slate-blue/10 pt-[32px] flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-sm text-on-surface-variant opacity-60">© <span id="current-year">2026</span> Misk Beirut. All rights reserved.</p>
+<div class="flex gap-[24px] text-sm">
+<a href="#" class="text-on-surface-variant hover:text-primary transition-colors">Privacy Policy</a>
+<a href="#" class="text-on-surface-variant hover:text-primary transition-colors">Terms & Conditions</a>
+</div>
+</div>
 </div>
 </footer>
-<div class="border-t border-slate-blue/10">
-<div class="max-w-[1280px] mx-auto px-[20px] md:px-[80px] py-[32px] flex flex-col md:flex-row justify-between items-center gap-4 text-sm opacity-60">
-<p>© 2026 Misk Beirut.</p>
-<div class="flex gap-4 items-center">
-<a aria-label="Instagram" class="hover:text-brick-red transition-colors" href="#"><div class="w-6 h-6 flex items-center justify-center"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></div></a>
-<a aria-label="Facebook" class="hover:text-brick-red transition-colors" href="#"><div class="w-6 h-6 flex items-center justify-center"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/></svg></div></a>
-</div>
-</div>
-</div>
-</footer>
+<script>
+// Update copyright year dynamically
+document.addEventListener('DOMContentLoaded', function() {
+    const currentYear = new Date().getFullYear();
+    const yearElement = document.getElementById('current-year');
+    if (yearElement) {
+        yearElement.textContent = currentYear;
+    }
+
+    // Load language preference from localStorage
+    const savedLanguage = localStorage.getItem('language') || 'en';
+    if (savedLanguage === 'ar') {
+        applyArabicRTL();
+    }
+});
+
+// Mobile menu toggle logic
+function toggleMobileMenu() {
+    const drawer = document.getElementById('mobile-drawer');
+    const backdrop = document.getElementById('mobile-backdrop');
+    if (drawer.classList.contains('translate-x-full')) {
+        drawer.classList.remove('translate-x-full');
+        backdrop.classList.remove('hidden');
+        setTimeout(() => backdrop.classList.add('opacity-100'), 10);
+        document.body.style.overflow = 'hidden';
+    } else {
+        drawer.classList.add('translate-x-full');
+        backdrop.classList.remove('opacity-100');
+        setTimeout(() => backdrop.classList.add('hidden'), 300);
+        document.body.style.overflow = '';
+    }
+}
+
+// Language toggle function
+function toggleLanguage() {
+    const html = document.documentElement;
+    const currentLang = html.getAttribute('lang');
+
+    if (currentLang === 'en') {
+        html.setAttribute('lang', 'ar');
+        html.setAttribute('dir', 'rtl');
+        localStorage.setItem('language', 'ar');
+        applyArabicRTL();
+    } else {
+        html.setAttribute('lang', 'en');
+        html.removeAttribute('dir');
+        localStorage.setItem('language', 'en');
+        removeArabicRTL();
+    }
+}
+
+// Apply Arabic RTL styles
+function applyArabicRTL() {
+    const html = document.documentElement;
+    html.setAttribute('dir', 'rtl');
+
+    // Add RTL-specific styles. Flexbox rows already mirror natively under
+    // dir="rtl"; these rules only cover physical (non-logical) utilities.
+    if (!document.getElementById('rtl-styles')) {
+        const style = document.createElement('style');
+        style.id = 'rtl-styles';
+        style.textContent = `
+            html[dir="rtl"] body { text-align: right; }
+            html[dir="rtl"] .text-center { text-align: center; }
+            html[dir="rtl"] .border-l-2 { border-left-width: 0; border-right-width: 2px; }
+            html[dir="rtl"] .border-l { border-left-width: 0; border-right-width: 1px; }
+            html[dir="rtl"] .pl-6 { padding-left: 0; padding-right: 1.5rem; }
+            html[dir="rtl"] .md\\:text-right { text-align: left; }
+            html[dir="rtl"] #mobile-drawer { right: auto; left: 0; border-left: none; border-right: 1px solid rgba(114,120,125,0.1); }
+            html[dir="rtl"] #mobile-drawer.translate-x-full { transform: translateX(-100%); }
+            html[dir="rtl"] .group-hover\\:translate-x-1,
+            html[dir="rtl"] .hover\\:translate-x-2 { --tw-translate-x: -0.25rem; }
+        `;
+        document.head.appendChild(style);
+    }
+}
+
+// Remove Arabic RTL styles
+function removeArabicRTL() {
+    const rtlStyles = document.getElementById('rtl-styles');
+    if (rtlStyles) {
+        rtlStyles.remove();
+    }
+}
+</script>
 <script>
 function toggleMobileMenu() {
     const drawer = document.getElementById('mobile-drawer');
