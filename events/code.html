@@ -174,7 +174,14 @@
 <!-- PLACEHOLDER: final copy pending from client -->
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mb-[48px]">Placeholder description — experience the thrill of live sports in our premium viewing spaces with world-class amenities. Final copy to be provided by the client.</p>
 <!-- PLACEHOLDER: real photos pending client photoshoot -->
-<div class="flex gap-[16px] overflow-x-auto pb-4 snap-x">
+<div class="carousel-head flex items-center justify-between mb-[16px]">
+<div class="w-16 h-0.5 bg-brick-red"></div>
+<div class="flex gap-[8px]">
+<button onclick="scrollCarousel(this,-1)" aria-label="Scroll gallery back" class="w-10 h-10 bg-white text-slate-blue border border-slate-blue hover:bg-slate-blue hover:text-white transition-all flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-sm">arrow_back</span></button>
+<button onclick="scrollCarousel(this,1)" aria-label="Scroll gallery forward" class="w-10 h-10 bg-white text-slate-blue border border-slate-blue hover:bg-slate-blue hover:text-white transition-all flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-sm">arrow_forward</span></button>
+</div>
+</div>
+<div class="flex gap-[16px] overflow-x-auto pb-4 snap-x space-carousel">
 <div class="w-[280px] h-[280px] md:w-[340px] md:h-[320px] flex-shrink-0 snap-start bg-slate-blue/10 border border-outline/20 flex items-center justify-center text-on-surface-variant">
 <span class="text-center"><span class="material-symbols-outlined text-4xl mb-2 block opacity-50">sports_soccer</span><p class="font-label-lg text-xs">PLACEHOLDER</p><p class="text-xs opacity-60">Match Day 1</p></span>
 </div>
@@ -204,7 +211,14 @@
 <!-- PLACEHOLDER: final copy pending from client -->
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mb-[48px]">Placeholder description — create unforgettable memories with our bespoke event planning services and luxurious venues. Final copy to be provided by the client.</p>
 <!-- PLACEHOLDER: real photos pending client photoshoot -->
-<div class="flex gap-[16px] overflow-x-auto pb-4 snap-x">
+<div class="carousel-head flex items-center justify-between mb-[16px]">
+<div class="w-16 h-0.5 bg-brick-red"></div>
+<div class="flex gap-[8px]">
+<button onclick="scrollCarousel(this,-1)" aria-label="Scroll gallery back" class="w-10 h-10 bg-white text-slate-blue border border-slate-blue hover:bg-slate-blue hover:text-white transition-all flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-sm">arrow_back</span></button>
+<button onclick="scrollCarousel(this,1)" aria-label="Scroll gallery forward" class="w-10 h-10 bg-white text-slate-blue border border-slate-blue hover:bg-slate-blue hover:text-white transition-all flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-sm">arrow_forward</span></button>
+</div>
+</div>
+<div class="flex gap-[16px] overflow-x-auto pb-4 snap-x space-carousel">
 <div class="w-[280px] h-[280px] md:w-[340px] md:h-[320px] flex-shrink-0 snap-start bg-slate-blue/10 border border-outline/20 flex items-center justify-center text-on-surface-variant">
 <span class="text-center"><span class="material-symbols-outlined text-4xl mb-2 block opacity-50">celebration</span><p class="font-label-lg text-xs">PLACEHOLDER</p><p class="text-xs opacity-60">Weddings</p></span>
 </div>
@@ -237,6 +251,22 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+</script>
+<style>
+/* Themed gallery slider */
+.space-carousel { scrollbar-width: thin; scrollbar-color: #8F383A rgba(78,114,137,0.12); }
+.space-carousel::-webkit-scrollbar { height: 4px; }
+.space-carousel::-webkit-scrollbar-track { background: rgba(78,114,137,0.12); }
+.space-carousel::-webkit-scrollbar-thumb { background: #8F383A; }
+.space-carousel > div { transition: box-shadow .3s, transform .3s; }
+.space-carousel > div:hover { box-shadow: 0 8px 24px rgba(53,89,112,0.15); transform: translateY(-4px); }
+</style>
+<script>
+// Scroll a gallery track one tile at a time via its arrow buttons
+function scrollCarousel(btn, dir) {
+    const track = btn.closest('.carousel-head').nextElementSibling;
+    track.scrollBy({ left: dir * 360, behavior: 'smooth' });
+}
 </script>
 <!-- Footer -->
 <footer class="bg-marble-white border-t border-slate-blue/10 mt-[120px]">
