@@ -167,7 +167,7 @@
 
 <!-- SPACE TABS -->
 <div class="max-w-[1280px] mx-auto px-[20px] md:px-[80px]">
-<div class="flex gap-[8px] md:gap-[32px] border-b border-outline/20 overflow-x-auto" role="tablist" aria-label="Our Spaces">
+<div class="flex gap-[8px] md:gap-[32px] border-b border-outline/20 overflow-x-auto no-scrollbar" role="tablist" aria-label="Our Spaces">
 <button id="tab-dining-shisha" role="tab" aria-controls="dining-shisha" aria-selected="true" onclick="selectTab('dining-shisha', true)" class="tab-btn whitespace-nowrap px-4 py-4 font-label-lg text-label-lg uppercase tracking-widest border-b-2 -mb-px transition-colors border-brick-red text-primary font-bold">Dining &amp; Shisha</button>
 <button id="tab-indoor-outdoor" role="tab" aria-controls="indoor-outdoor" aria-selected="false" onclick="selectTab('indoor-outdoor', true)" class="tab-btn whitespace-nowrap px-4 py-4 font-label-lg text-label-lg uppercase tracking-widest border-b-2 -mb-px transition-colors border-transparent text-on-surface-variant hover:text-primary">Indoor &amp; Outdoor Spaces</button>
 <button id="tab-work-casual" role="tab" aria-controls="work-casual" aria-selected="false" onclick="selectTab('work-casual', true)" class="tab-btn whitespace-nowrap px-4 py-4 font-label-lg text-label-lg uppercase tracking-widest border-b-2 -mb-px transition-colors border-transparent text-on-surface-variant hover:text-primary">Work &amp; Casual Meetings</button>
@@ -299,6 +299,8 @@ window.addEventListener('hashchange', tabFromHash);
 </script>
 <style>
 /* Themed gallery slider */
+.no-scrollbar { scrollbar-width: none; -ms-overflow-style: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
 .space-carousel { scrollbar-width: thin; scrollbar-color: #8F383A rgba(78,114,137,0.12); }
 .space-carousel::-webkit-scrollbar { height: 4px; }
 .space-carousel::-webkit-scrollbar-track { background: rgba(78,114,137,0.12); }
