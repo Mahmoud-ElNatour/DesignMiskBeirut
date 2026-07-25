@@ -155,7 +155,7 @@
 <div id="mobile-backdrop" class="fixed inset-0 z-40 bg-black/20 backdrop-blur-sm hidden opacity-0 transition-opacity duration-300 md:hidden" onclick="toggleMobileMenu()"></div>
 
 <!-- PAGE HEADER -->
-<section class="relative min-h-[400px] flex items-center justify-center overflow-hidden py-[120px]" id="header">
+<section class="relative min-h-[320px] flex items-end justify-center overflow-hidden pt-[160px] pb-[48px]" id="header">
 <div class="absolute inset-0 z-0">
 <div class="w-full h-full bg-gradient-to-b from-primary/20 to-slate-blue/20"></div>
 </div>
@@ -165,118 +165,108 @@
 </div>
 </section>
 
-<!-- DINING & SHISHA -->
-<section class="bg-marble-white py-[120px]" id="dining-shisha">
+<!-- SPACE TABS -->
 <div class="max-w-[1280px] mx-auto px-[20px] md:px-[80px]">
-<div class="text-center mb-[48px]">
+<div class="flex gap-[8px] md:gap-[32px] border-b border-outline/20 overflow-x-auto" role="tablist" aria-label="Our Spaces">
+<button id="tab-dining-shisha" role="tab" aria-controls="dining-shisha" aria-selected="true" onclick="selectTab('dining-shisha', true)" class="tab-btn whitespace-nowrap px-4 py-4 font-label-lg text-label-lg uppercase tracking-widest border-b-2 -mb-px transition-colors border-brick-red text-primary font-bold">Dining &amp; Shisha</button>
+<button id="tab-indoor-outdoor" role="tab" aria-controls="indoor-outdoor" aria-selected="false" onclick="selectTab('indoor-outdoor', true)" class="tab-btn whitespace-nowrap px-4 py-4 font-label-lg text-label-lg uppercase tracking-widest border-b-2 -mb-px transition-colors border-transparent text-on-surface-variant hover:text-primary">Indoor &amp; Outdoor Spaces</button>
+<button id="tab-work-casual" role="tab" aria-controls="work-casual" aria-selected="false" onclick="selectTab('work-casual', true)" class="tab-btn whitespace-nowrap px-4 py-4 font-label-lg text-label-lg uppercase tracking-widest border-b-2 -mb-px transition-colors border-transparent text-on-surface-variant hover:text-primary">Work &amp; Casual Meetings</button>
+</div>
+
+<!-- PANEL: Dining & Shisha -->
+<section id="dining-shisha" role="tabpanel" aria-labelledby="tab-dining-shisha" class="tab-panel py-[60px]">
 <h2 class="font-display-lg text-headline-lg text-primary mb-[16px]">Dining &amp; Shisha</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Elegant dining spaces with authentic Lebanese hospitality, paired with a curated shisha experience.</p>
-<div class="w-24 h-0.5 bg-brick-red mx-auto mt-[16px]"></div>
-</div>
-
+<!-- PLACEHOLDER: final copy pending from client -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mb-[48px]">Placeholder description — elegant dining spaces with authentic Lebanese hospitality, paired with a curated shisha experience. Final copy to be provided by the client.</p>
 <!-- PLACEHOLDER: real photos pending client photoshoot -->
-<div class="grid grid-cols-1 md:grid-cols-3 gap-[24px]">
-<div class="h-[300px] bg-slate-blue/10 border border-outline/20 flex items-center justify-center text-on-surface-variant">
-<span class="text-center">
-<span class="material-symbols-outlined text-6xl mb-2 block opacity-50">restaurant</span>
-<p class="font-label-lg mb-2">PLACEHOLDER</p>
-<p class="text-sm opacity-60">Dining Area</p>
-</span>
+<div class="flex gap-[16px] overflow-x-auto pb-4">
+<div class="w-[200px] h-[200px] flex-shrink-0 bg-slate-blue/10 border border-outline/20 flex items-center justify-center text-on-surface-variant">
+<span class="text-center"><span class="material-symbols-outlined text-4xl mb-2 block opacity-50">restaurant</span><p class="font-label-lg text-xs">PLACEHOLDER</p><p class="text-xs opacity-60">Dining Area</p></span>
 </div>
-<div class="h-[300px] bg-slate-blue/10 border border-outline/20 flex items-center justify-center text-on-surface-variant">
-<span class="text-center">
-<span class="material-symbols-outlined text-6xl mb-2 block opacity-50">restaurant</span>
-<p class="font-label-lg mb-2">PLACEHOLDER</p>
-<p class="text-sm opacity-60">Shisha Lounge</p>
-</span>
+<div class="w-[200px] h-[200px] flex-shrink-0 bg-slate-blue/10 border border-outline/20 flex items-center justify-center text-on-surface-variant">
+<span class="text-center"><span class="material-symbols-outlined text-4xl mb-2 block opacity-50">restaurant</span><p class="font-label-lg text-xs">PLACEHOLDER</p><p class="text-xs opacity-60">Shisha Lounge</p></span>
 </div>
-<div class="h-[300px] bg-slate-blue/10 border border-outline/20 flex items-center justify-center text-on-surface-variant">
-<span class="text-center">
-<span class="material-symbols-outlined text-6xl mb-2 block opacity-50">restaurant</span>
-<p class="font-label-lg mb-2">PLACEHOLDER</p>
-<p class="text-sm opacity-60">Evening Ambiance</p>
-</span>
-</div>
+<div class="w-[200px] h-[200px] flex-shrink-0 bg-slate-blue/10 border border-outline/20 flex items-center justify-center text-on-surface-variant">
+<span class="text-center"><span class="material-symbols-outlined text-4xl mb-2 block opacity-50">restaurant</span><p class="font-label-lg text-xs">PLACEHOLDER</p><p class="text-xs opacity-60">Evening Ambiance</p></span>
 </div>
 </div>
 </section>
 
-<!-- INDOOR & OUTDOOR SPACES -->
-<section class="bg-surface py-[120px]" id="indoor-outdoor">
-<div class="max-w-[1280px] mx-auto px-[20px] md:px-[80px]">
-<div class="text-center mb-[48px]">
+<!-- PANEL: Indoor & Outdoor Spaces -->
+<section id="indoor-outdoor" role="tabpanel" aria-labelledby="tab-indoor-outdoor" class="tab-panel py-[60px] hidden">
 <h2 class="font-display-lg text-headline-lg text-primary mb-[16px]">Indoor &amp; Outdoor Spaces</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Versatile venues for any gathering, with stunning ambiance inside and out.</p>
-<div class="w-24 h-0.5 bg-brick-red mx-auto mt-[16px]"></div>
-</div>
-
+<!-- PLACEHOLDER: final copy pending from client -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mb-[48px]">Placeholder description — versatile venues for any gathering, with stunning ambiance inside and out. Final copy to be provided by the client.</p>
 <!-- PLACEHOLDER: real photos pending client photoshoot -->
-<div class="grid grid-cols-1 md:grid-cols-3 gap-[24px]">
-<div class="h-[300px] bg-slate-blue/10 border border-outline/20 flex items-center justify-center text-on-surface-variant">
-<span class="text-center">
-<span class="material-symbols-outlined text-6xl mb-2 block opacity-50">location_city</span>
-<p class="font-label-lg mb-2">PLACEHOLDER</p>
-<p class="text-sm opacity-60">Indoor Salon</p>
-</span>
+<div class="flex gap-[16px] overflow-x-auto pb-4">
+<div class="w-[200px] h-[200px] flex-shrink-0 bg-slate-blue/10 border border-outline/20 flex items-center justify-center text-on-surface-variant">
+<span class="text-center"><span class="material-symbols-outlined text-4xl mb-2 block opacity-50">location_city</span><p class="font-label-lg text-xs">PLACEHOLDER</p><p class="text-xs opacity-60">Indoor Salon</p></span>
 </div>
-<div class="h-[300px] bg-slate-blue/10 border border-outline/20 flex items-center justify-center text-on-surface-variant">
-<span class="text-center">
-<span class="material-symbols-outlined text-6xl mb-2 block opacity-50">deck</span>
-<p class="font-label-lg mb-2">PLACEHOLDER</p>
-<p class="text-sm opacity-60">Outdoor Terrace</p>
-</span>
+<div class="w-[200px] h-[200px] flex-shrink-0 bg-slate-blue/10 border border-outline/20 flex items-center justify-center text-on-surface-variant">
+<span class="text-center"><span class="material-symbols-outlined text-4xl mb-2 block opacity-50">deck</span><p class="font-label-lg text-xs">PLACEHOLDER</p><p class="text-xs opacity-60">Outdoor Terrace</p></span>
 </div>
-<div class="h-[300px] bg-slate-blue/10 border border-outline/20 flex items-center justify-center text-on-surface-variant">
-<span class="text-center">
-<span class="material-symbols-outlined text-6xl mb-2 block opacity-50">yard</span>
-<p class="font-label-lg mb-2">PLACEHOLDER</p>
-<p class="text-sm opacity-60">Garden Seating</p>
-</span>
-</div>
+<div class="w-[200px] h-[200px] flex-shrink-0 bg-slate-blue/10 border border-outline/20 flex items-center justify-center text-on-surface-variant">
+<span class="text-center"><span class="material-symbols-outlined text-4xl mb-2 block opacity-50">yard</span><p class="font-label-lg text-xs">PLACEHOLDER</p><p class="text-xs opacity-60">Garden Seating</p></span>
 </div>
 </div>
 </section>
 
-<!-- WORK & CASUAL MEETINGS -->
-<section class="bg-marble-white py-[120px]" id="work-meetings">
-<div class="max-w-[1280px] mx-auto px-[20px] md:px-[80px]">
-<div class="text-center mb-[48px]">
+<!-- PANEL: Work & Casual Meetings -->
+<section id="work-casual" role="tabpanel" aria-labelledby="tab-work-casual" class="tab-panel py-[60px] hidden">
 <h2 class="font-display-lg text-headline-lg text-primary mb-[16px]">Work &amp; Casual Meetings</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">A calm environment for studying, working, and informal gatherings.</p>
-<div class="w-24 h-0.5 bg-brick-red mx-auto mt-[16px]"></div>
-</div>
-
+<!-- PLACEHOLDER: final copy pending from client -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mb-[48px]">Placeholder description — a calm environment for studying, working, and informal gatherings. Final copy to be provided by the client.</p>
 <!-- PLACEHOLDER: real photos pending client photoshoot -->
-<div class="grid grid-cols-1 md:grid-cols-3 gap-[24px] mb-[48px]">
-<div class="h-[300px] bg-slate-blue/10 border border-outline/20 flex items-center justify-center text-on-surface-variant">
-<span class="text-center">
-<span class="material-symbols-outlined text-6xl mb-2 block opacity-50">business_center</span>
-<p class="font-label-lg mb-2">PLACEHOLDER</p>
-<p class="text-sm opacity-60">Quiet Corners</p>
-</span>
+<div class="flex gap-[16px] overflow-x-auto pb-4">
+<div class="w-[200px] h-[200px] flex-shrink-0 bg-slate-blue/10 border border-outline/20 flex items-center justify-center text-on-surface-variant">
+<span class="text-center"><span class="material-symbols-outlined text-4xl mb-2 block opacity-50">business_center</span><p class="font-label-lg text-xs">PLACEHOLDER</p><p class="text-xs opacity-60">Quiet Corners</p></span>
 </div>
-<div class="h-[300px] bg-slate-blue/10 border border-outline/20 flex items-center justify-center text-on-surface-variant">
-<span class="text-center">
-<span class="material-symbols-outlined text-6xl mb-2 block opacity-50">wifi</span>
-<p class="font-label-lg mb-2">PLACEHOLDER</p>
-<p class="text-sm opacity-60">Work-Friendly Seating</p>
-</span>
+<div class="w-[200px] h-[200px] flex-shrink-0 bg-slate-blue/10 border border-outline/20 flex items-center justify-center text-on-surface-variant">
+<span class="text-center"><span class="material-symbols-outlined text-4xl mb-2 block opacity-50">wifi</span><p class="font-label-lg text-xs">PLACEHOLDER</p><p class="text-xs opacity-60">Work-Friendly Seating</p></span>
 </div>
-<div class="h-[300px] bg-slate-blue/10 border border-outline/20 flex items-center justify-center text-on-surface-variant">
-<span class="text-center">
-<span class="material-symbols-outlined text-6xl mb-2 block opacity-50">coffee</span>
-<p class="font-label-lg mb-2">PLACEHOLDER</p>
-<p class="text-sm opacity-60">Casual Meeting Tables</p>
-</span>
+<div class="w-[200px] h-[200px] flex-shrink-0 bg-slate-blue/10 border border-outline/20 flex items-center justify-center text-on-surface-variant">
+<span class="text-center"><span class="material-symbols-outlined text-4xl mb-2 block opacity-50">coffee</span><p class="font-label-lg text-xs">PLACEHOLDER</p><p class="text-xs opacity-60">Casual Meeting Tables</p></span>
 </div>
 </div>
+</section>
 
-<div class="text-center">
+<div class="text-center pb-[80px]">
 <a href="../contact_us_final_prototype_restored_fixed/code.html" class="bg-brick-red text-white px-12 py-5 font-label-lg text-label-lg uppercase tracking-widest hover:bg-opacity-90 transition-all inline-block">Reserve a Table</a>
 </div>
 </div>
-</section>
 
+<script>
+// Tabbed spaces logic: switch panels without reload, sync with URL hash
+const SPACE_TABS = ['dining-shisha', 'indoor-outdoor', 'work-casual'];
+
+function selectTab(id, updateHash) {
+    if (SPACE_TABS.indexOf(id) === -1) id = SPACE_TABS[0];
+    SPACE_TABS.forEach(function(tabId) {
+        const btn = document.getElementById('tab-' + tabId);
+        const panel = document.getElementById(tabId);
+        const isActive = tabId === id;
+        panel.classList.toggle('hidden', !isActive);
+        btn.setAttribute('aria-selected', isActive ? 'true' : 'false');
+        btn.classList.toggle('border-brick-red', isActive);
+        btn.classList.toggle('text-primary', isActive);
+        btn.classList.toggle('font-bold', isActive);
+        btn.classList.toggle('border-transparent', !isActive);
+        btn.classList.toggle('text-on-surface-variant', !isActive);
+        btn.classList.toggle('hover:text-primary', !isActive);
+    });
+    if (updateHash) {
+        history.replaceState(null, '', '#' + id);
+    }
+}
+
+function tabFromHash() {
+    const hash = window.location.hash.replace('#', '');
+    selectTab(hash, false);
+}
+
+document.addEventListener('DOMContentLoaded', tabFromHash);
+window.addEventListener('hashchange', tabFromHash);
+</script>
 <!-- Footer -->
 <footer class="bg-marble-white border-t border-slate-blue/10 mt-[120px]">
 <div class="max-w-[1280px] mx-auto px-[20px] md:px-[80px] py-[60px]">
