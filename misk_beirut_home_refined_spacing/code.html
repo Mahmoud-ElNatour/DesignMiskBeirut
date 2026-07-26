@@ -687,4 +687,111 @@ function removeArabicRTL() {
 
 
 
+<!-- Fullscreen gallery lightbox: click a photo to view it full screen, navigate with arrows -->
+<script>
+(function () {
+    const GALLERY_SELECTOR = '.space-carousel, .insta-carousel';
+    let items = [];
+    let index = 0;
+
+    const overlay = document.createElement('div');
+    overlay.id = 'photo-lightbox';
+    overlay.setAttribute('role', 'dialog');
+    overlay.setAttribute('aria-modal', 'true');
+    overlay.style.cssText = 'position:fixed;inset:0;z-index:100;background:rgba(26,26,26,0.95);display:none;align-items:center;justify-content:center;';
+
+    const stage = document.createElement('div');
+    stage.style.cssText = 'max-width:90vw;max-height:85vh;display:flex;align-items:center;justify-content:center;';
+    overlay.appendChild(stage);
+
+    function lbButton(label, icon, css) {
+        const btn = document.createElement('button');
+        btn.setAttribute('aria-label', label);
+        btn.style.cssText = 'position:absolute;width:56px;height:56px;border:1px solid rgba(255,255,255,0.3);background:rgba(255,255,255,0.08);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .2s;' + css;
+        btn.innerHTML = '<span class="material-symbols-outlined" style="font-size:28px;">' + icon + '</span>';
+        btn.onmouseenter = () => btn.style.background = 'rgba(255,255,255,0.22)';
+        btn.onmouseleave = () => btn.style.background = 'rgba(255,255,255,0.08)';
+        overlay.appendChild(btn);
+        return btn;
+    }
+    const closeBtn = lbButton('Close full screen view', 'close', 'top:24px;right:24px;');
+    const prevBtn = lbButton('Previous photo', 'arrow_back', 'left:16px;top:50%;transform:translateY(-50%);');
+    const nextBtn = lbButton('Next photo', 'arrow_forward', 'right:16px;top:50%;transform:translateY(-50%);');
+
+    const counter = document.createElement('p');
+    counter.style.cssText = 'position:absolute;bottom:24px;left:50%;transform:translateX(-50%);color:#fff;opacity:.7;letter-spacing:.2em;font-size:13px;margin:0;';
+    overlay.appendChild(counter);
+
+    function imageUrlOf(item) {
+        const img = item.querySelector('img');
+        if (img && img.src) return img.src;
+        const host = [item].concat(Array.from(item.querySelectorAll('*'))).find(function (e) {
+            const bg = getComputedStyle(e).backgroundImage;
+            return bg && bg.indexOf('url(') === 0;
+        });
+        if (host) {
+            const bg = getComputedStyle(host).backgroundImage;
+            return bg.replace(/^url\(["']?/, '').replace(/["']?\)$/, '');
+        }
+        return null;
+    }
+
+    function render() {
+        stage.innerHTML = '';
+        const item = items[index];
+        const url = imageUrlOf(item);
+        if (url) {
+            const img = document.createElement('img');
+            img.src = url;
+            img.alt = (item.querySelector('img') && item.querySelector('img').alt) || item.getAttribute('data-alt') || '';
+            img.style.cssText = 'max-width:90vw;max-height:85vh;object-fit:contain;box-shadow:0 20px 60px rgba(0,0,0,0.5);';
+            stage.appendChild(img);
+        } else {
+            const clone = item.cloneNode(true);
+            clone.style.cssText = 'width:min(80vw,560px);height:min(80vw,560px);transform:none;cursor:default;';
+            stage.appendChild(clone);
+        }
+        counter.textContent = (index + 1) + ' / ' + items.length;
+    }
+
+    function openLightbox() {
+        overlay.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+        overlay.style.display = 'none';
+        document.body.style.overflow = '';
+    }
+    function step(dir) {
+        index = (index + dir + items.length) % items.length;
+        render();
+    }
+
+    closeBtn.addEventListener('click', closeLightbox);
+    prevBtn.addEventListener('click', function (e) { e.stopPropagation(); step(-1); });
+    nextBtn.addEventListener('click', function (e) { e.stopPropagation(); step(1); });
+    overlay.addEventListener('click', function (e) { if (e.target === overlay || e.target === stage) closeLightbox(); });
+    document.addEventListener('keydown', function (e) {
+        if (overlay.style.display === 'none' || !overlay.style.display) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') step(-1);
+        if (e.key === 'ArrowRight') step(1);
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        document.body.appendChild(overlay);
+        document.querySelectorAll(GALLERY_SELECTOR).forEach(function (gallery) {
+            Array.from(gallery.children).forEach(function (tile) {
+                tile.style.cursor = 'zoom-in';
+                tile.addEventListener('click', function () {
+                    items = Array.from(gallery.children);
+                    index = items.indexOf(tile);
+                    render();
+                    openLightbox();
+                });
+            });
+        });
+    });
+})();
+</script>
 </body></html>
